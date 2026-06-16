@@ -1,47 +1,61 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { Phone, ArrowRight } from "lucide-react";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/hero-bg.jpg')" }}
-      />
+    <section
+      id="hero"
+      aria-labelledby="hero-title"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/hero-bg.jpg"
+          alt="Taller especializado en maquinaria pesada y motores diésel en Mosquera, Cundinamarca"
+          fill
+          className="object-cover"
+          priority
+          loading="eager"
+        />
+      </div>
+
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/70 to-black/50" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-40">
         <div className="max-w-4xl">
-          <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-[1.1] mb-6">
-            Soluciones Integrales y{" "}
-            <span className="text-brand-yellow">Servicio Técnico</span> para
-            Maquinaria Pesada
+          <h1
+            id="hero-title"
+            className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-[1.1] mb-6"
+          >
+            Servicio Técnico y Repuestos para Maquinaria Pesada en Colombia
           </h1>
 
           <p className="text-lg sm:text-xl text-white/80 max-w-2xl mb-10 leading-relaxed">
-            Repuestos genuinos, servicio técnico especializado e importación
-            directa desde EE.UU. Una sola empresa para todo lo que su operación
-            necesita. Diagnóstico y reparación con cobertura nacional.
+            Repuestos genuinos y aftermarket, servicio técnico especializado
+            para maquinaria pesada, reparación de motores diésel e importación
+            directa desde EE.UU. Cobertura nacional en Colombia.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="https://wa.me/573133799992?text=Hola%2C%20quiero%20cotizar%20un%20repuesto%20o%20servicio"
+              href="https://wa.me/573133799992?text=Hola%2C%20quisiera%20cotizar%20repuestos%2Fservicio%20t%C3%A9cnico%20para%20maquinaria%20pesada"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Cotizar por WhatsApp con CR Project S.A.S — Servicio técnico maquinaria pesada Colombia"
               className="inline-flex items-center justify-center gap-2 bg-brand-yellow hover:bg-brand-amber text-carbon font-bold text-base px-8 py-4 rounded-sm transition-all hover:shadow-lg hover:shadow-brand-yellow/20 hover:-translate-y-0.5"
             >
-              <Phone className="w-5 h-5" />
+              <Phone className="w-5 h-5" aria-hidden="true" />
               Cotizar por WhatsApp
             </a>
             <Link
-              href="/maquinaria-usada"
+              href="/venta-maquinaria"
               className="inline-flex items-center justify-center gap-2 border-2 border-bone/20 hover:border-brand-yellow/50 text-bone font-bold text-base px-8 py-4 rounded-sm transition-all hover:bg-brand-yellow/5"
             >
               Ver Maquinaria en Venta
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="w-5 h-5" aria-hidden="true" />
             </Link>
           </div>
 

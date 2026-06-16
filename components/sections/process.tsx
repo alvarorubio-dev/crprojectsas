@@ -30,17 +30,25 @@ export function ProcessSection() {
   const { ref, isInView } = useInView();
 
   return (
-    <section className="py-20 lg:py-28 bg-carbon" ref={ref}>
+    <section
+      id="diagnostico"
+      aria-labelledby="diagnostico-title"
+      className="py-20 lg:py-28 bg-carbon"
+      ref={ref}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
         {/* Header */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
           <div className={isInView ? "animate-fade-in-up" : "opacity-0"}>
             <span className="text-brand-yellow text-sm font-bold uppercase tracking-widest">
-              Nuestro Trabajo
+              Diagnóstico Computarizado
             </span>
-            <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl text-bone mt-4 leading-tight">
-              Calidad, Innovación<br className="hidden sm:block" /> y Compromiso
+            <h2
+              id="diagnostico-title"
+              className="font-heading text-3xl sm:text-4xl lg:text-5xl text-bone mt-4 leading-tight"
+            >
+              Calidad, Innovación
+              <br className="hidden sm:block" /> y Compromiso
             </h2>
           </div>
           <div
@@ -48,9 +56,10 @@ export function ProcessSection() {
             style={{ animationDelay: "100ms" }}
           >
             <p className="text-bone/60 leading-relaxed">
-              Innovamos con el profesionalismo de nuestros colaboradores, utilizando las mejores
-              marcas del mercado para así garantizar una calidad en nuestros servicios. Brindamos
-              asesoramiento técnico y de ingeniería enfocados en la optimización y confiabilidad.
+              Innovamos con el profesionalismo de nuestros colaboradores,
+              utilizando las mejores marcas del mercado para así garantizar una
+              calidad en nuestros servicios. Brindamos asesoramiento técnico y
+              de ingeniería enfocados en la optimización y confiabilidad.
               Comprometidos con el desarrollo industrial de nuestro país.
             </p>
           </div>
@@ -92,15 +101,17 @@ export function ProcessSection() {
         >
           <p className="text-bone/70 leading-relaxed text-center">
             Los métodos operativos y de ejecución que utilizamos en{" "}
-            <span className="text-bone font-bold">CR PROJECT SAS</span> cuentan con parámetros
-            que dan seguridad y confiabilidad para nuestros clientes. Garantizamos un trabajo de
-            calidad gracias al compromiso de nuestros colaboradores, técnicos, ingenieros y en su
-            totalidad de todo el personal. Proporcionamos una{" "}
-            <span className="text-brand-yellow font-bold">efectividad al 100%</span> y un
-            completo seguimiento a los tiempos de entrega.
+            <span className="text-bone font-bold">CR PROJECT SAS</span> cuentan
+            con parámetros que dan seguridad y confiabilidad para nuestros
+            clientes. Garantizamos un trabajo de calidad gracias al compromiso
+            de nuestros colaboradores, técnicos, ingenieros y en su totalidad de
+            todo el personal. Proporcionamos una{" "}
+            <span className="text-brand-yellow font-bold">
+              efectividad al 100%
+            </span>{" "}
+            y un completo seguimiento a los tiempos de entrega.
           </p>
         </div>
-
       </div>
     </section>
   );

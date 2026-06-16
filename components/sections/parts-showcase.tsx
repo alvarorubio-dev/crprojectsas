@@ -10,42 +10,42 @@ const parts = [
     name: "Turbos para Motores Diésel",
     category: "Motor",
     brands: "CAT, Komatsu, Cummins",
-    image: "turbo.jpg",
+    image: "/turbo.jpg",
     slug: "turbos-motores-diesel",
   },
   {
     name: "Inyectores de Combustible",
     category: "Sistema de Inyección",
     brands: "Bosch, Delphi, Denso",
-    image: "repair-inyector.jpg",
+    image: "/repair-inyector.jpg",
     slug: "inyectores-combustible",
   },
   {
     name: "Filtros Industriales",
     category: "Filtración",
     brands: "Fleetguard, Donaldson, Baldwin",
-    image: "filtros.jpg",
+    image: "/filtros.jpg",
     slug: "filtros-industriales",
   },
   {
     name: "Componentes Hidráulicos",
     category: "Hidráulica",
     brands: "Parker, Rexroth, Kawasaki",
-    image: "hidraulico.jpg",
+    image: "/hidraulico.jpg",
     slug: "componentes-hidraulicos",
   },
   {
     name: "Transmisiones y Cajas",
     category: "Transmisión",
     brands: "Allison, ZF, Eaton",
-    image: "cambio.jpg",
+    image: "/cambio.jpg",
     slug: "transmisiones-cajas",
   },
   {
     name: "Sistemas de Frenos",
     category: "Frenos",
     brands: "Meritor, Bendix, WABCO",
-    image: "frenos.jpg",
+    image: "/frenos.jpg",
     slug: "sistemas-frenos",
   },
 ];
@@ -54,28 +54,38 @@ export function PartsShowcase() {
   const { ref, isInView } = useInView();
 
   return (
-    <section className="py-20 lg:py-28 bg-graphite" ref={ref}>
+    <section
+      id="repuestos"
+      aria-labelledby="repuestos-title"
+      className="py-20 lg:py-28 bg-graphite"
+      ref={ref}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <span className="text-brand-yellow text-sm font-bold uppercase tracking-widest">
             Repuestos para Maquinaria Pesada
           </span>
-          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl text-bone mt-4">
+          <h2
+            id="repuestos-title"
+            className="font-heading text-3xl sm:text-4xl lg:text-5xl text-bone mt-4"
+          >
             Expertos en Repuestos
             <br className="hidden sm:block" /> de Alta Calidad
           </h2>
           <p className="text-bone/60 mt-4 max-w-2xl mx-auto">
-            Somos especialistas en repuestos genuinos y alternativos de primera
-            línea. Disponibilidad inmediata para las principales marcas de
-            maquinaria pesada. Garantía de calidad y compatibilidad asegurada.
+            Distribuimos repuestos genuinos y de alta calidad para CAT, Komatsu,
+            John Deere, Cummins, New Holland y CNH, con disponibilidad inmediata
+            en bodega Mosquera.
           </p>
         </div>
 
-        {/* Features/Benefits */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <div className="flex items-start gap-4 bg-carbon/50 border border-steel/30 rounded-sm p-4">
             <div className="w-12 h-12 bg-brand-yellow/10 border border-brand-yellow/20 rounded-sm flex items-center justify-center flex-shrink-0">
-              <Package className="w-6 h-6 text-brand-yellow" />
+              <Package
+                className="w-6 h-6 text-brand-yellow"
+                aria-hidden="true"
+              />
             </div>
             <div>
               <h3 className="font-heading text-bone font-bold">
@@ -88,7 +98,10 @@ export function PartsShowcase() {
           </div>
           <div className="flex items-start gap-4 bg-carbon/50 border border-steel/30 rounded-sm p-4">
             <div className="w-12 h-12 bg-brand-yellow/10 border border-brand-yellow/20 rounded-sm flex items-center justify-center flex-shrink-0">
-              <Shield className="w-6 h-6 text-brand-yellow" />
+              <Shield
+                className="w-6 h-6 text-brand-yellow"
+                aria-hidden="true"
+              />
             </div>
             <div>
               <h3 className="font-heading text-bone font-bold">
@@ -101,7 +114,10 @@ export function PartsShowcase() {
           </div>
           <div className="flex items-start gap-4 bg-carbon/50 border border-steel/30 rounded-sm p-4">
             <div className="w-12 h-12 bg-brand-yellow/10 border border-brand-yellow/20 rounded-sm flex items-center justify-center flex-shrink-0">
-              <Wrench className="w-6 h-6 text-brand-yellow" />
+              <Wrench
+                className="w-6 h-6 text-brand-yellow"
+                aria-hidden="true"
+              />
             </div>
             <div>
               <h3 className="font-heading text-bone font-bold">
@@ -114,7 +130,6 @@ export function PartsShowcase() {
           </div>
         </div>
 
-        {/* Grid de Repuestos */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {parts.map((part, i) => (
             <div
@@ -127,10 +142,12 @@ export function PartsShowcase() {
               <div className="relative h-56 overflow-hidden">
                 <Image
                   src={part.image}
-                  alt={part.name}
+                  alt={`${part.name} — Repuestos para maquinaria pesada en Colombia`}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="p-6">
@@ -142,20 +159,20 @@ export function PartsShowcase() {
                 </h3>
                 <p className="text-sm text-bone/50 mt-2">{part.brands}</p>
                 <a
-                  href={`https://wa.me/573133799992?text=Hola%2C%20me%20interesa%20el%20repuesto%20${encodeURIComponent(part.name)}`}
+                  href="https://wa.me/573133799992?text=Hola%2C%20quisiera%20cotizar%20repuestos%2Fservicio%20t%C3%A9cnico%20para%20maquinaria%20pesada"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`Cotizar por WhatsApp repuesto ${part.name} — Servicio técnico maquinaria pesada Colombia`}
                   className="inline-flex items-center gap-2 mt-4 text-brand-yellow text-sm font-bold hover:underline"
                 >
                   Consultar disponibilidad
-                  <ArrowRight className="w-4 h-4" />
+                  <ArrowRight className="w-4 h-4" aria-hidden="true" />
                 </a>
               </div>
             </div>
           ))}
         </div>
 
-        {/* CTA Final */}
         <div className="text-center mt-12">
           <p className="text-bone/60 mb-4">
             ¿No encuentras el repuesto que necesitas?
@@ -165,7 +182,7 @@ export function PartsShowcase() {
             className="inline-flex items-center gap-2 text-brand-yellow font-bold hover:underline"
           >
             Contáctanos y lo conseguimos por ti
-            <ArrowRight className="w-4 h-4" />
+            <ArrowRight className="w-4 h-4" aria-hidden="true" />
           </Link>
         </div>
       </div>

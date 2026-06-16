@@ -1,4 +1,5 @@
 import "./globals.css";
+/// <reference types="next/dist/client/image-omission-warnings" />
 import type { Metadata } from "next";
 import { Inter, Archivo_Black } from "next/font/google";
 import { Header } from "@/components/layout/header";
@@ -20,11 +21,13 @@ const archivo = Archivo_Black({
 
 export const metadata: Metadata = {
   title: {
-    default: "CR Project S.A.S — Repuestos y Servicio Técnico para Maquinaria Pesada | Colombia",
-    template: "%s | CR Project S.A.S",
+    default:
+      "CR Project S.A.S — Repuestos y Servicio Técnico para Maquinaria Pesada | Colombia",
+    template: "%s — Servicio Técnico Maquinaria Pesada | CR Project S.A.S",
   },
   description:
     "Comercializadora de partes genuinas y aftermarket para maquinaria amarilla, camiones y motores diésel. Servicio técnico especializado, importación de maquinaria usada desde EE.UU. Cobertura nacional.",
+  creator: "CR Project S.A.S",
   keywords: [
     "repuestos maquinaria amarilla",
     "servicio técnico maquinaria pesada Colombia",
@@ -47,7 +50,8 @@ export const metadata: Metadata = {
     locale: "es_CO",
     url: "https://www.crprojectsas.com",
     siteName: "CR Project S.A.S",
-    title: "CR Project S.A.S — Repuestos y Servicio Técnico para Maquinaria Pesada",
+    title:
+      "CR Project S.A.S — Repuestos y Servicio Técnico para Maquinaria Pesada",
     description:
       "Partes genuinas, servicio técnico especializado e importación de maquinaria usada desde EE.UU. Operación binacional con cobertura en toda Colombia.",
     images: [
@@ -62,7 +66,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "CR Project S.A.S — Repuestos y Maquinaria Pesada",
-    description: "Partes genuinas, servicio técnico especializado e importación de maquinaria usada. Cobertura nacional.",
+    description:
+      "Partes genuinas, servicio técnico especializado e importación de maquinaria usada. Cobertura nacional.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -98,6 +103,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
+              "@id": "https://www.crprojectsas.com/#organization",
               "@type": "AutoRepair",
               name: "CR Project S.A.S",
               description:
@@ -126,7 +132,14 @@ export default function RootLayout({
               ],
               openingHoursSpecification: {
                 "@type": "OpeningHoursSpecification",
-                dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                dayOfWeek: [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                ],
                 opens: "07:00",
                 closes: "18:00",
               },

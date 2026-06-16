@@ -17,7 +17,7 @@ const services = [
     description:
       "Servicio especializado en la restauración y reparación integral de todo tipo de maquinaria amarilla y equipos industriales.",
     href: "/servicio-tecnico",
-    image: "repair-maquina.jpg",
+    image: "/repair-maquina.jpg",
     highlight: true,
   },
   {
@@ -25,42 +25,42 @@ const services = [
     description:
       "Tecnología de punta para identificar fallas con precisión, utilizando equipos de diagnóstico computarizado de última generación.",
     href: "/diagnostico",
-    image: "herramientas_de_diagnostico.png",
+    image: "/herramientas_de_diagnostico.png",
   },
   {
     title: "Mantenimiento Eléctrico",
     description:
       "Soluciones completas para sistemas eléctricos, desde la reparación de alternadores y motores de arranque hasta la revisión de cableado.",
     href: "/mantenimiento-electrico",
-    image: "mante-electrico.jpg",
+    image: "/mante-electrico.jpg",
   },
   {
     title: "Mantenimiento Preventivo y Correctivo",
     description:
       "Programas a medida para extender la vida útil de su flota, minimizando tiempos de inactividad y costos operativos.",
     href: "/mantenimiento-flotas",
-    image: "mantenimiento-correctivo.jpg",
+    image: "/mantenimiento-correctivo.jpg",
   },
   {
     title: "Alquiler de Maquinaria y Equipos",
     description:
       "Flota disponible para alquiler con opciones flexibles, equipos certificados y listos para operar en cualquier proyecto.",
     href: "/alquiler-maquinaria",
-    image: "alquiler-maquinaria.jpg",
+    image: "/alquiler-maquinaria.jpg",
   },
   {
     title: "Reparación de Motores",
     description:
       "Overhaul y reparación completa de motores diésel, cumpliendo rigurosamente con las especificaciones y estándares del fabricante.",
     href: "/reparacion-motores",
-    image: "repair-motores.jpg",
+    image: "/repair-motores.jpg",
   },
   {
     title: "Venta de Maquinaria",
     description:
       "Comercialización de maquinaria pesada nueva y usada, importada directamente y con garantía de funcionamiento verificada.",
     href: "/venta-maquinaria",
-    image: "venta-maquinaria.jpg",
+    image: "/venta-maquinaria.jpg",
     highlight: true,
   },
 ];
@@ -69,14 +69,22 @@ export function ServicesGrid() {
   const { ref, isInView } = useInView();
 
   return (
-    <section className="py-20 lg:py-28 bg-gray-50" ref={ref}>
+    <section
+      id="servicios"
+      aria-labelledby="servicios-title"
+      className="py-20 lg:py-28 bg-gray-50"
+      ref={ref}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="text-brand-yellow text-sm font-bold uppercase tracking-widest">
             Nuestros Servicios
           </span>
-          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl text-gray-900 mt-4">
-            Repuestos y Servicio Técnico Especializado en{" "}
+          <h2
+            id="servicios-title"
+            className="font-heading text-3xl sm:text-4xl lg:text-5xl text-gray-900 mt-4"
+          >
+            Repuestos y Servicio Técnico Especializado en
             <br className="hidden sm:block" /> Maquinaria Pesada
           </h2>
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
@@ -100,10 +108,12 @@ export function ServicesGrid() {
                 <div className="h-48 w-full overflow-hidden relative">
                   <Image
                     src={service.image}
-                    alt={service.title}
+                    alt={`${service.title} especializado en maquinaria pesada — CR Project S.A.S Colombia`}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    loading="lazy"
+                    decoding="async"
                   />
                   {service.highlight && (
                     <div className="absolute top-3 right-3 bg-brand-yellow text-carbon text-xs font-bold px-2 py-1 rounded-sm shadow-md">

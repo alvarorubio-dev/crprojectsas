@@ -61,14 +61,22 @@ export function Differentiators() {
   const [activeService, setActiveService] = useState(0);
 
   return (
-    <section className="py-20 lg:py-28 bg-gray-50" ref={ref}>
+    <section
+      id="motores-diesel"
+      aria-labelledby="motores-diesel-title"
+      className="py-20 lg:py-28 bg-gray-50"
+      ref={ref}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
           <span className="text-brand-yellow text-sm font-bold uppercase tracking-widest">
             Servicio Técnico
           </span>
-          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl text-gray-900 mt-4">
+          <h2
+            id="motores-diesel-title"
+            className="font-heading text-3xl sm:text-4xl lg:text-5xl text-gray-900 mt-4"
+          >
             Diagnóstico y Solución de Fallas
           </h2>
           <p className="text-gray-600 mt-4 max-w-3xl mx-auto text-lg">

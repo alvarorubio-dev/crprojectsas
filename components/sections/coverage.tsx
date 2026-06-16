@@ -7,48 +7,78 @@ export function CoverageSection() {
   const { ref, isInView } = useInView();
 
   return (
-    <section className="py-20 lg:py-28 bg-gray-50" ref={ref}>
+    <section
+      id="cobertura"
+      aria-labelledby="cobertura-title"
+      className="py-20 lg:py-28 bg-gray-50"
+      ref={ref}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className={isInView ? "animate-fade-in-up" : "opacity-0"}>
-            <span className="text-brand-yellow text-sm font-bold uppercase tracking-widest">Cobertura</span>
-            <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl text-gray-900 mt-4">
+            <span className="text-brand-yellow text-sm font-bold uppercase tracking-widest">
+              Cobertura
+            </span>
+            <h2
+              id="cobertura-title"
+              className="font-heading text-3xl sm:text-4xl lg:text-5xl text-gray-900 mt-4"
+            >
               Servicio en Toda Colombia
             </h2>
             <p className="text-gray-600 mt-4 leading-relaxed">
-              Sede principal en Mosquera, Cundinamarca. Atendemos solicitudes a nivel nacional
-              con reparaciones profesionales en campo. Vamos donde está la máquina.
+              Sede principal en Mosquera, Cundinamarca. Atendemos solicitudes a
+              nivel nacional con reparaciones profesionales en campo. Vamos
+              donde está la máquina.
             </p>
 
             <div className="mt-8 space-y-4">
               <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-brand-yellow flex-shrink-0 mt-0.5" />
+                <MapPin
+                  className="w-5 h-5 text-brand-yellow flex-shrink-0 mt-0.5"
+                  aria-hidden="true"
+                />
                 <div>
                   <p className="text-gray-900 font-medium">Sede Principal</p>
-                  <p className="text-gray-600 text-sm">Carrocerías Capri, El Cerrito, Mosquera, Cundinamarca</p>
+                  <p className="text-gray-600 text-sm">
+                    Carrocerías Capri, El Cerrito, Mosquera, Cundinamarca
+                  </p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-brand-yellow flex-shrink-0 mt-0.5" />
+                <MapPin
+                  className="w-5 h-5 text-brand-yellow flex-shrink-0 mt-0.5"
+                  aria-hidden="true"
+                />
                 <div>
-                  <p className="text-gray-900 font-medium">Operación Internacional</p>
-                  <p className="text-gray-600 text-sm">Miami, Florida, EE.UU. — Importación y subastas</p>
+                  <p className="text-gray-900 font-medium">
+                    Operación Internacional
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    Miami, Florida, EE.UU. — Importación y subastas
+                  </p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <Phone className="w-5 h-5 text-brand-yellow flex-shrink-0 mt-0.5" />
+                <Phone
+                  className="w-5 h-5 text-brand-yellow flex-shrink-0 mt-0.5"
+                  aria-hidden="true"
+                />
                 <div>
                   <p className="text-gray-900 font-medium">Contacto Directo</p>
-                  <p className="text-gray-600 text-sm">+57 313 379 9992 — Cristian (WhatsApp)</p>
+                  <p className="text-gray-600 text-sm">
+                    +57 313 379 9992 — Cristian (WhatsApp)
+                  </p>
                 </div>
               </div>
             </div>
 
             <div className="mt-8 p-4 bg-white border border-gray-200 rounded-sm">
               <p className="text-sm text-gray-600">
-                <span className="text-gray-900 font-bold">Zonas prioritarias:</span>{" "}
-                Mosquera, Funza, Madrid, Facatativá, Bogotá y toda la sabana de Cundinamarca.
-                Servicio técnico a nivel nacional.
+                <span className="text-gray-900 font-bold">
+                  Zonas prioritarias:
+                </span>{" "}
+                Mosquera, Funza, Madrid, Facatativá, Bogotá y toda la sabana de
+                Cundinamarca. Servicio técnico a nivel nacional.
               </p>
             </div>
           </div>
