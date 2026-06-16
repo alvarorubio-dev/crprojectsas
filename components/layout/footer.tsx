@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, MapPin, Clock, Instagram, Facebook } from "lucide-react";
 
 const serviceLinks = [
@@ -17,15 +18,25 @@ const serviceLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-carbon border-t border-steel/30">
+    <footer
+      className="bg-carbon border-t border-steel/30"
+      aria-labelledby="footer-heading"
+    >
+      <h2 id="footer-heading" className="sr-only">
+        Footer de CR Project SAS
+      </h2>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          {/* Bloque Logo y Redes */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <img
+              <Image
                 src="/logo-csprojects.svg"
                 alt="CR Project S.A.S"
+                width={40}
+                height={40}
                 className="w-10 h-10 object-contain"
+                priority
               />
               <div>
                 <span className="font-heading text-lg font-bold text-bone">
@@ -45,7 +56,7 @@ export function Footer() {
               <a
                 href="https://www.instagram.com/crprojectsas"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 aria-label="Visitar Instagram de CR Project SAS"
                 className="w-10 h-10 bg-steel/50 rounded-sm flex items-center justify-center text-bone/60 hover:text-brand-yellow hover:bg-steel transition-all"
               >
@@ -54,7 +65,7 @@ export function Footer() {
               <a
                 href="https://www.facebook.com/share/1Dj61LMP2r/"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 aria-label="Visitar Facebook de CR Project SAS"
                 className="w-10 h-10 bg-steel/50 rounded-sm flex items-center justify-center text-bone/60 hover:text-brand-yellow hover:bg-steel transition-all"
               >
@@ -63,6 +74,7 @@ export function Footer() {
             </div>
           </div>
 
+          {/* Bloque Servicios */}
           <div>
             <h4 className="font-heading font-bold text-bone mb-4 text-sm uppercase tracking-wider">
               Servicios
@@ -73,6 +85,7 @@ export function Footer() {
                   <Link
                     href={link.href}
                     className="text-sm text-bone/60 hover:text-brand-yellow transition-colors"
+                    prefetch={false}
                   >
                     {link.name}
                   </Link>
@@ -81,6 +94,7 @@ export function Footer() {
             </ul>
           </div>
 
+          {/* Bloque Empresa */}
           <div>
             <h4 className="font-heading font-bold text-bone mb-4 text-sm uppercase tracking-wider">
               Empresa
@@ -113,6 +127,7 @@ export function Footer() {
             </ul>
           </div>
 
+          {/* Bloque Contacto */}
           <div>
             <h4 className="font-heading font-bold text-bone mb-4 text-sm uppercase tracking-wider">
               Contacto
@@ -150,6 +165,7 @@ export function Footer() {
           </div>
         </div>
 
+        {/* Pie inferior */}
         <div className="border-t border-steel/30 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-bone/40">
             &copy; {new Date().getFullYear()} CR Project S.A.S. Todos los

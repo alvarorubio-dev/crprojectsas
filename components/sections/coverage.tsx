@@ -40,7 +40,7 @@ export function CoverageSection() {
                 <div>
                   <p className="text-gray-900 font-medium">Sede Principal</p>
                   <p className="text-gray-600 text-sm">
-                    Carrocerías Capri, El Cerrito, Mosquera, Cundinamarca
+                    El Cerrito, Mosquera, Cundinamarca
                   </p>
                 </div>
               </div>
@@ -90,7 +90,7 @@ export function CoverageSection() {
             style={{ animationDelay: "200ms" }}
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.5!2d-74.2325!3d4.7086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMosquera%2C+Cundinamarca!5e0!3m2!1ses!2sco!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.407067134999!2d-74.1831868!3d4.699130200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9d6da26e4b99%3A0xcb7bde902bb9fd1e!2sCR%20PROJECT%20S.A.S!5e0!3m2!1ses!2sco!4v1781651686180!5m2!1ses!2sco"
               width="100%"
               height="100%"
               style={{ border: 0 }}

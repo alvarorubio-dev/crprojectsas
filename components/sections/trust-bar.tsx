@@ -7,10 +7,10 @@ const brands = [
   { name: "CNH Industrial", short: "CNH" },
   { name: "John Deere", short: "DEERE" },
   { name: "New Holland", short: "N.HOLLAND" },
-  { name: "Nexiq", short: "NEXIQ" },
+  { name: "Volvo", short: "VOLVO" },
   { name: "Garrett", short: "GARRETT" },
-  { name: "BorgWarner", short: "BORGWARNER" },
-  { name: "3M", short: "3M" },
+  { name: "Detroit Diesel", short: "DDC" },
+  { name: "International Motors", short: "INTERNATIONAL" },
 ];
 
 const repeatedBrands = [...brands, ...brands];

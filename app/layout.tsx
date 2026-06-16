@@ -93,18 +93,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={`${inter.variable} ${archivo.variable}`}>
-      <body className={`${inter.className} min-h-screen flex flex-col`}>
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <FloatingWhatsApp />
+      <head>
+        {/* Los datos estructurados ahora están en el head y cubren tanto reparación como venta de repuestos */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@id": "https://www.crprojectsas.com/#organization",
-              "@type": "AutoRepair",
+              "@type": ["AutoRepair", "AutoPartsStore"],
               name: "CR Project S.A.S",
               description:
                 "Comercializadora de partes para maquinaria amarilla, camiones y motores diésel. Servicio técnico especializado.",
@@ -147,6 +144,12 @@ export default function RootLayout({
             }),
           }}
         />
+      </head>
+      <body className={`${inter.className} min-h-screen flex flex-col`}>
+        <Header />
+        <main className="flex-1">{children}</main>
+        <Footer />
+        <FloatingWhatsApp />
       </body>
     </html>
   );
