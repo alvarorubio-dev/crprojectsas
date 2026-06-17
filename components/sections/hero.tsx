@@ -30,7 +30,8 @@ export function HeroSection() {
             id="hero-title"
             className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-[1.1] mb-6"
           >
-            Servicio Técnico y Repuestos para Maquinaria Pesada en Colombia
+            Repuestos para Maquinaria Pesada en Colombia | Servicio Técnico
+            Especializado
           </h1>
 
           <p className="text-lg sm:text-xl text-white/80 max-w-2xl mb-10 leading-relaxed">

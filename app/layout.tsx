@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s — Servicio Técnico Maquinaria Pesada | CR Project S.A.S",
   },
   description:
-    "Comercializadora de partes genuinas y aftermarket para maquinaria amarilla, camiones y motores diésel. Servicio técnico especializado, importación de maquinaria usada desde EE.UU. Cobertura nacional.",
+    "Comercializadora derepuestos maquinaria pesada y aftermarket para maquinaria amarilla, camiones y motores diésel. Servicio técnico especializado, importación de maquinaria usada desde EE.UU. Cobertura nacional.",
   creator: "CR Project S.A.S",
   keywords: [
     "repuestos maquinaria amarilla",

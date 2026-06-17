@@ -84,8 +84,8 @@ export function ServicesGrid() {
             id="servicios-title"
             className="font-heading text-3xl sm:text-4xl lg:text-5xl text-gray-900 mt-4"
           >
-            Repuestos y Servicio Técnico Especializado en
-            <br className="hidden sm:block" /> Maquinaria Pesada
+            Solución Integral en Repuestos, Diagnóstico y Reparación de
+            Maquinaria Amarilla
           </h2>
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
             Una sola empresa para repuestos, diagnóstico, reparación,
