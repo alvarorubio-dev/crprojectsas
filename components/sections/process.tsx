@@ -48,7 +48,7 @@ export function ProcessSection() {
               className="font-heading text-3xl sm:text-4xl lg:text-5xl text-bone mt-4 leading-tight"
             >
               Calidad, Innovación
-              <br className="hidden sm:block" /> y Compromiso
+              <br className="hidden sm:block" /> y Compromiso con tu flota
             </h2>
           </div>
           <div

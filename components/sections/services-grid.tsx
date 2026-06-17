@@ -6,38 +6,38 @@ import { useInView } from "@/hooks/use-in-view";
 
 const services = [
   {
-    title: "Venta de Repuestos",
+    title: "Venta de Repuestos y",
     description:
-      "Amplio catálogo de repuestos genuinos y alternativos de alta calidad para garantizar el máximo rendimiento de su equipo.",
+      "Somos tu vendedor de repuestos para Maquinaria y Vehículos Pesados en Colombia. Amplio catálogo de piezas genuinas y aftermarket de alta calidad. Tenemos los mejores repuestos y precios del mercado.",
     href: "/repuestos",
     image: "/repuestos.jpg",
   },
   {
-    title: "Reparación de Maquinaria Pesada",
+    title: "Reparación Integral",
     description:
-      "Servicio especializado en la restauración y reparación integral de todo tipo de maquinaria amarilla y equipos industriales.",
+      "Servicio especializado en la restauración y reconstrucción de maquinaria amarilla y vehículos pesados. Alargamos la vida útil de tus equipos.",
     href: "/servicio-tecnico",
     image: "/repair-maquina.jpg",
     highlight: true,
   },
   {
-    title: "Herramientas de Diagnóstico",
+    title: "Herramientas de Diagnóstico Computarizado",
     description:
-      "Tecnología de punta para identificar fallas con precisión, utilizando equipos de diagnóstico computarizado de última generación.",
+      "Tecnología de punta para escaneo e identificación de fallas exactas en tu maquinaría pesada. Diagnóstico rápido y preciso para minimizar tiempos de inactividad.",
     href: "/diagnostico",
     image: "/herramientas_de_diagnostico.png",
   },
   {
     title: "Mantenimiento Eléctrico",
     description:
-      "Soluciones completas para sistemas eléctricos, desde la reparación de alternadores y motores de arranque hasta la revisión de cableado.",
+      "Soluciones completas para sistemas eléctricos, alternadores, cableado y motores de arranque.",
     href: "/mantenimiento-electrico",
     image: "/mante-electrico.jpg",
   },
   {
     title: "Mantenimiento Preventivo y Correctivo",
     description:
-      "Programas a medida para extender la vida útil de su flota, minimizando tiempos de inactividad y costos operativos.",
+      "Programas a medida de mantenimiento y reparación de maquinaria pesada para evitar tiempos muertos en tus proyectos.",
     href: "/mantenimiento-flotas",
     image: "/mantenimiento-correctivo.jpg",
   },
@@ -84,13 +84,13 @@ export function ServicesGrid() {
             id="servicios-title"
             className="font-heading text-3xl sm:text-4xl lg:text-5xl text-gray-900 mt-4"
           >
-            Solución Integral en Repuestos, Diagnóstico y Reparación de
-            Maquinaria Amarilla
+            Mantenimiento y Reparación de Equipos y Vehículos Pesados
           </h2>
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-            Una sola empresa para repuestos, diagnóstico, reparación,
-            importación y cumplimiento normativo. No necesita múltiples
-            proveedores.
+            Una sola empresa para todo tu parque automotor. Desde la operación y
+            mantenimiento de maquinaria pesada hasta la reparación de tu flota
+            de transporte. No necesitas múltiples proveedores; en CR Project
+            S.A.S lo resolvemos todo.
           </p>
         </div>
 

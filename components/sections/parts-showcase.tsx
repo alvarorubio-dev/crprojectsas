@@ -69,13 +69,15 @@ export function PartsShowcase() {
             id="repuestos-title"
             className="font-heading text-3xl sm:text-4xl lg:text-5xl text-bone mt-4"
           >
-            Expertos en Repuestos
-            <br className="hidden sm:block" /> de Alta Calidad
+            Expertos en Repuestos para Maquinaria Pesada
+            <br className="hidden sm:block" /> en Colombia
           </h2>
           <p className="text-bone/60 mt-4 max-w-2xl mx-auto">
-            Distribuimos repuestos genuinos y de alta calidad para CAT, Komatsu,
-            John Deere, Cummins, New Holland y CNH, con disponibilidad inmediata
-            en bodega Mosquera.
+            Distribuimos componentes genuinos y de alta calidad para las
+            principales maquinaria amarilla marcas: CAT, Komatsu, John Deere,
+            Cummins y CNH. Disponibilidad inmediata en nuestra bodega de
+            Mosquera, ideal si buscas repuestos maquinaria pesada Bogotá y sus
+            alrededores.
           </p>
         </div>
 
@@ -91,9 +93,7 @@ export function PartsShowcase() {
               <h3 className="font-heading text-bone font-bold">
                 Disponibilidad Inmediata
               </h3>
-              <p className="text-sm text-bone/50 mt-1">
-                Stock permanente en bodega
-              </p>
+              <p className="text-sm text-bone/50 mt-1">Stock permanente</p>
             </div>
           </div>
           <div className="flex items-start gap-4 bg-carbon/50 border border-steel/30 rounded-sm p-4">
@@ -124,7 +124,7 @@ export function PartsShowcase() {
                 Asesoría Técnica
               </h3>
               <p className="text-sm text-bone/50 mt-1">
-                Expertos te ayudan a elegir
+                Un especialista te ayuda a elegir la pieza exacta.
               </p>
             </div>
           </div>
@@ -175,7 +175,7 @@ export function PartsShowcase() {
 
         <div className="text-center mt-12">
           <p className="text-bone/60 mb-4">
-            ¿No encuentras el repuesto que necesitas?
+            ¿No encuentras los repuestos para maquinaria amarilla que necesitas?
           </p>
           <Link
             href="/contacto"

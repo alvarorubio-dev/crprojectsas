@@ -19,12 +19,13 @@ export function ImportacionSection() {
             id="importacion-title"
             className="font-heading text-3xl sm:text-4xl lg:text-5xl text-carbon mt-4"
           >
-            Importación desde EE.UU.
+            ¿Cómo importar maquinaria pesada a Colombia?
           </h2>
           <p className="text-gray-600 mt-4 max-w-3xl mx-auto leading-relaxed">
-            Operación binacional Colombia – Miami. Gestión de subastas,
-            logística y nacionalización para importar maquinaria usada y
-            repuestos desde Estados Unidos.
+            Nosotros lo hacemos fácil. Gracias a nuestra operación binacional
+            (Colombia – Miami, EE.UU.), gestionamos subastas, logística y
+            nacionalización aduanera para traer tus equipos desde el exterior
+            sin complicaciones.
           </p>
         </div>
 

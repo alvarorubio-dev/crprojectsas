@@ -30,14 +30,17 @@ export function HeroSection() {
             id="hero-title"
             className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-[1.1] mb-6"
           >
-            Repuestos para Maquinaria Pesada en Colombia | Servicio Técnico
-            Especializado
+            Soluciones Integrales para{" "}
+            <span className="text-brand-yellow">Maquinaria Pesada</span> en
+            Colombia
           </h1>
 
           <p className="text-lg sm:text-xl text-white/80 max-w-2xl mb-10 leading-relaxed">
-            Repuestos genuinos y aftermarket, servicio técnico especializado
-            para maquinaria pesada, reparación de motores diésel e importación
-            directa desde EE.UU. Cobertura nacional en Colombia.
+            El aliado número uno en repuestos para maquinaria pesada,
+            diagnóstico avanzado y servicio técnico especializado en Mosquera,
+            Bogotá y a nivel nacional. Importación directa desde EE.UU. y
+            soluciones para motores diésel. ¡Minimizamos el tiempo de
+            inactividad de tu flota!
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
@@ -75,7 +78,7 @@ export function HeroSection() {
             </div>
             <div>
               <p className="font-heading text-2xl sm:text-3xl text-brand-yellow">
-                2
+                2 (🇨🇴 y 🇺🇸)
               </p>
               <p className="text-sm text-white/60 mt-1">Países de operación</p>
             </div>
@@ -83,7 +86,9 @@ export function HeroSection() {
               <p className="font-heading text-2xl sm:text-3xl text-brand-yellow">
                 24h
               </p>
-              <p className="text-sm text-white/60 mt-1">Respuesta rápida</p>
+              <p className="text-sm text-white/60 mt-1">
+                Respuesta técnica rápida
+              </p>
             </div>
           </div>
         </div>

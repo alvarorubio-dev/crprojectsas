@@ -33,13 +33,13 @@ export function FAQSection() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <span className="text-brand-yellow text-sm font-bold uppercase tracking-widest">
-            Preguntas Frecuentes
+            FAQ
           </span>
           <h2
             id="faq-title"
             className="font-heading text-3xl sm:text-4xl lg:text-5xl text-bone mt-4"
           >
-            Respuestas Claras
+            Preguntas Frecuentes sobre Maquinaria Amarilla Colombia
           </h2>
           <p className="text-bone/60 mt-4 max-w-3xl mx-auto leading-relaxed">
             Sobre servicio técnico, repuestos, importación y diagnóstico

@@ -49,9 +49,9 @@ const technicalServices = [
     image: "/herramientas_de_diagnostico.png",
   },
   {
-    title: "Reparación y Pintura General",
+    title: "Pintura y Latonería Profesional",
     description:
-      "Restauración completa de carrocería y pintura profesional para maquinaria y vehículos pesados. Acabado de fábrica.",
+      "Restauración completa de carrocería y pintura profesional para maquinaria y vehículos pesados. Con acabados de fábrica.",
     image: "/pintura.jpg",
   },
 ];
@@ -77,13 +77,13 @@ export function Differentiators() {
             id="motores-diesel-title"
             className="font-heading text-3xl sm:text-4xl lg:text-5xl text-gray-900 mt-4"
           >
-            Diagnóstico y Solución de Fallas
+            Técnico en Maquinaria Pesada Bogotá y Nivel Nacional
           </h2>
-          <p className="text-gray-600 mt-4 max-w-3xl mx-auto text-lg">
-            <span className="font-bold text-gray-900">CR Project S.A.S</span> —
-            Evaluación técnica según especificaciones del fabricante. Servicio
-            técnico especializado con cobertura nacional para maquinaria pesada,
-            vehículos de transporte y motores diésel.
+          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+            Evaluación basada en especificaciones del fabricante. Nuestro
+            servicio de reparacion maquinaria pesada incluye unidades móviles
+            equipadas para atender emergencias en campo. ¡Vamos a donde está tu
+            máquina o camión!
           </p>
         </div>
 
