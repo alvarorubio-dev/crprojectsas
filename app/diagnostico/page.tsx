@@ -3,17 +3,18 @@ import { ServicePageTemplate } from "@/components/sections/service-page-template
 
 export const metadata: Metadata = {
   title: "Escáner y Diagnóstico Diésel — Electrónica, Harness y Módulos REMAN",
-  description: "Diagnóstico computarizado con escáner profesional, reconstrucción de arneses eléctricos y módulos REMAN programados para maquinaria pesada. Capacidad técnica avanzada.",
+  description:
+    "Diagnóstico computarizado con escáner profesional, reconstrucción de arneses eléctricos y módulos REMAN programados para maquinaria pesada. Capacidad técnica avanzada.",
   alternates: { canonical: "https://www.crprojectsas.com/diagnostico" },
 };
 
 export default function DiagnosticoPage() {
   return (
     <ServicePageTemplate
-      title="Escáner y Diagnóstico Diésel"
-      subtitle="Capacidad técnica avanzada"
-      description="Reconstruimos arneses eléctricos (harness) y suministramos módulos electrónicos REMAN programados. Esta es una capacidad técnica avanzada que muy pocos talleres en Colombia ofrecen: hacemos electrónica y programación, no solo mecánica."
-      heroImage="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=1920"
+      title="Escáner y Diagnóstico para Equipos Pesados en Colombia"
+      subtitle="Servicio de Escaneo Electrónico"
+      description="En CR Project realizamos diagnóstico electrónico avanzado para maquinaria amarilla, equipos de construcción, camiones, tractocamiones, buses y vehículos pesados en Colombia."
+      heroImage="/escaner.webp"
       features={[
         "Diagnóstico computarizado con escáner profesional",
         "Reconstrucción completa de arneses eléctricos (harness)",
@@ -40,10 +41,26 @@ export default function DiagnosticoPage() {
       ]}
       brands={["CAT", "JOHN DEERE", "NEXIQ", "CUMMINS", "CNH"]}
       faqs={[
-        { question: "¿Qué es un módulo REMAN?", answer: "Un módulo REMAN (remanufacturado) es un módulo electrónico que ha sido reconstruido profesionalmente, probado y programado para funcionar como nuevo. Es una alternativa confiable y más económica que un módulo original nuevo." },
-        { question: "¿Pueden reconstruir cualquier harness?", answer: "Trabajamos con la mayoría de harness para maquinaria amarilla y motores diésel. Evaluamos el estado del arnés y determinamos si es viable la reconstrucción o si requiere fabricación de un tramo nuevo." },
-        { question: "¿Cómo sé si mi falla es electrónica?", answer: "Códigos de falla activos, pérdida de comunicación con el ECU, fallas intermitentes, o comportamientos erráticos del equipo suelen indicar problemas electrónicos. Realizamos un diagnóstico profesional para confirmar." },
-        { question: "¿Tienen módulos REMAN en stock?", answer: "Mantenemos stock de los módulos más solicitados. Para referencias específicas, consulte disponibilidad por WhatsApp. Si no está en stock, gestionamos la importación." },
+        {
+          question: "¿Qué es un módulo REMAN?",
+          answer:
+            "Un módulo REMAN (remanufacturado) es un módulo electrónico que ha sido reconstruido profesionalmente, probado y programado para funcionar como nuevo. Es una alternativa confiable y más económica que un módulo original nuevo.",
+        },
+        {
+          question: "¿Pueden reconstruir cualquier harness?",
+          answer:
+            "Trabajamos con la mayoría de harness para maquinaria amarilla y motores diésel. Evaluamos el estado del arnés y determinamos si es viable la reconstrucción o si requiere fabricación de un tramo nuevo.",
+        },
+        {
+          question: "¿Cómo sé si mi falla es electrónica?",
+          answer:
+            "Códigos de falla activos, pérdida de comunicación con el ECU, fallas intermitentes, o comportamientos erráticos del equipo suelen indicar problemas electrónicos. Realizamos un diagnóstico profesional para confirmar.",
+        },
+        {
+          question: "¿Tienen módulos REMAN en stock?",
+          answer:
+            "Mantenemos stock de los módulos más solicitados. Para referencias específicas, consulte disponibilidad por WhatsApp. Si no está en stock, gestionamos la importación.",
+        },
       ]}
       breadcrumbName="Escáner y Diagnóstico"
       breadcrumbUrl="/diagnostico"

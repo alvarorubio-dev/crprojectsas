@@ -1,6 +1,11 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, MapPin, Clock, Instagram, Facebook } from "lucide-react";
+import { useState } from "react";
+// Se agregó el ícono 'Mail' a la importación
+import { Phone, MapPin, Clock, Instagram, Facebook, Mail } from "lucide-react";
+import { LegalModals } from "../legal/LegalModals";
 
 const serviceLinks = [
   { name: "Venta de Repuestos", href: "/repuestos" },
@@ -17,6 +22,10 @@ const serviceLinks = [
 ];
 
 export function Footer() {
+  const [modalType, setModalType] = useState<"privacidad" | "aviso" | null>(
+    null,
+  );
+
   return (
     <footer
       className="bg-carbon border-t border-steel/30"
@@ -137,7 +146,9 @@ export function Footer() {
                 <Phone className="w-4 h-4 text-brand-yellow mt-0.5 flex-shrink-0" />
                 <div>
                   <a
-                    href="tel:+573133799992"
+                    href="https://wa.me/573133799992"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-sm text-bone/80 hover:text-brand-yellow transition-colors"
                   >
                     +57 313 379 9992
@@ -145,10 +156,25 @@ export function Footer() {
                   <p className="text-xs text-bone/40">Cristian — WhatsApp</p>
                 </div>
               </li>
+
+              {/* Nuevo bloque de Email agregado aquí */}
+              <li className="flex items-start gap-3">
+                <Mail className="w-4 h-4 text-brand-yellow mt-0.5 flex-shrink-0" />
+                <div>
+                  <a
+                    href="mailto:crprojectsas@gmail.com"
+                    className="text-sm text-bone/80 hover:text-brand-yellow transition-colors"
+                  >
+                    crprojectsas@gmail.com
+                  </a>
+                  <p className="text-xs text-bone/40">Email principal</p>
+                </div>
+              </li>
+
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-brand-yellow mt-0.5 flex-shrink-0" />
                 <p className="text-sm text-bone/60">
-                  Carrocerías Capri, El Cerrito,
+                  El Cerrito,
                   <br />
                   Mosquera, Cundinamarca, Colombia
                 </p>
@@ -156,9 +182,13 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Clock className="w-4 h-4 text-brand-yellow mt-0.5 flex-shrink-0" />
                 <p className="text-sm text-bone/60">
-                  Lunes a Sábado
+                  Lunes a Viernes
                   <br />
-                  7:00 AM — 6:00 PM
+                  8:00 AM — 7:00 PM
+                  <br />
+                  Sábados
+                  <br />
+                  8:00 AM — 12:00 PM
                 </p>
               </li>
             </ul>
@@ -166,19 +196,45 @@ export function Footer() {
         </div>
 
         {/* Pie inferior */}
-        <div className="border-t border-steel/30 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-bone/40">
-            &copy; {new Date().getFullYear()} CR Project S.A.S. Todos los
-            derechos reservados.
-          </p>
-          <div className="flex items-center gap-2 text-xs text-bone/40">
-            <span>Operación</span>
-            <span className="text-base">🇨🇴</span>
-            <span className="text-base">🇺🇸</span>
-            <span className="text-base">🇻🇪</span>
+        <div className="border-t border-steel/30 mt-12 pt-8">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-4">
+            <p className="text-xs text-bone/40">
+              &copy; {new Date().getFullYear()} CR Project S.A.S. Todos los
+              derechos reservados.
+            </p>
+            <div className="flex items-center gap-2 text-xs text-bone/40">
+              <span>Operación</span>
+              <span className="text-base">🇨🇴</span>
+              <span className="text-base">🇺🇸</span>
+              <span className="text-base">🇻🇪</span>
+            </div>
+          </div>
+
+          {/* Enlaces legales */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4 border-t border-steel/20">
+            <button
+              onClick={() => setModalType("privacidad")}
+              className="text-xs text-bone/60 hover:text-brand-yellow transition-colors underline"
+            >
+              Política de Tratamiento de Datos
+            </button>
+            <span className="hidden sm:inline text-bone/40">•</span>
+            <button
+              onClick={() => setModalType("aviso")}
+              className="text-xs text-bone/60 hover:text-brand-yellow transition-colors underline"
+            >
+              Aviso de Privacidad
+            </button>
           </div>
         </div>
       </div>
+
+      {/* Modales legales */}
+      <LegalModals
+        isOpen={modalType !== null}
+        type={modalType || "privacidad"}
+        onClose={() => setModalType(null)}
+      />
     </footer>
   );
 }

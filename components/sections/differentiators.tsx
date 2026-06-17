@@ -40,13 +40,13 @@ const technicalServices = [
     title: "Servicio a Nivel Nacional",
     description:
       "Unidades móviles equipadas para atender emergencias en cualquier punto de Colombia. Vamos donde está su máquina.",
-    image: "/tarjeta.jpg",
+    image: "/tarjeta-contacto.webp",
   },
   {
     title: "Diagnóstico de Maquinaria Amarilla",
     description:
       "Escáner computarizado para CAT, Komatsu, John Deere y todas las marcas líderes del mercado.",
-    image: "/herramientas_de_diagnostico.png",
+    image: "/computadora.jpg",
   },
   {
     title: "Pintura y Latonería Profesional",

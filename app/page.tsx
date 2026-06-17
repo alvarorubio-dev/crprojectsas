@@ -90,7 +90,7 @@ export default function Home() {
                 position: 1,
                 item: {
                   "@type": "Service",
-                  name: "Venta de repuestos para maquinaria pesada",
+                  name: "Venta de repuestos para maquinaria pesada Cundinamarca y Colombia",
                   description:
                     "Venta de repuestos genuinos OEM y aftermarket para maquinaria pesada en Colombia.",
                 },
@@ -100,7 +100,7 @@ export default function Home() {
                 position: 2,
                 item: {
                   "@type": "Service",
-                  name: "Reparación de motores diésel",
+                  name: "Reparación de motores equipos pesados",
                   description:
                     "Reparación de motores diésel con overhaul, rectificación y calibración de inyectores.",
                 },
@@ -130,9 +130,9 @@ export default function Home() {
                 position: 5,
                 item: {
                   "@type": "Service",
-                  name: "Importación de maquinaria desde EE.UU.",
+                  name: "Importación de maquinaria desde EE.UU a Colombia.",
                   description:
-                    "Importación directa de maquinaria usada y repuestos desde Estados Unidos con logística y nacionalización.",
+                    "Importación directa de maquinaria usada y repuestos desde Estados Unidos a Colombia con logística y nacionalización.",
                 },
               },
             ],

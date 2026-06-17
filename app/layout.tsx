@@ -21,12 +21,11 @@ const archivo = Archivo_Black({
 
 export const metadata: Metadata = {
   title: {
-    default:
-      "CR Project S.A.S — Repuestos y Servicio Técnico para Maquinaria Pesada | Colombia",
+    default: "Repuestos y Servicio Técnico para Maquinaria Pesada | Colombia",
     template: "%s — Servicio Técnico Maquinaria Pesada | CR Project S.A.S",
   },
   description:
-    "Comercializadora derepuestos maquinaria pesada y aftermarket para maquinaria amarilla, camiones y motores diésel. Servicio técnico especializado, importación de maquinaria usada desde EE.UU. Cobertura nacional.",
+    "Comercializadora de repuestos maquinaria pesada y aftermarket para equipos pesados, camiones y motores diésel. Servicio técnico especializado, importación de maquinaria usada desde EE.UU. Cobertura nacional.",
   creator: "CR Project S.A.S",
   keywords: [
     "repuestos maquinaria amarilla",
@@ -51,15 +50,15 @@ export const metadata: Metadata = {
     url: "https://www.crprojectsas.com",
     siteName: "CR Project S.A.S",
     title:
-      "CR Project S.A.S — Repuestos y Servicio Técnico para Maquinaria Pesada",
+      "Repuestos y Servicio Técnico para Maquinaria Pesada — CR Project S.A.S",
     description:
-      "Partes genuinas, servicio técnico especializado e importación de maquinaria usada desde EE.UU. Operación binacional con cobertura en toda Colombia.",
+      "Repuestos originales para maquinaria pesada en Colombia, servicio técnico especializado e importación de maquinaria usada desde EE.UU. Operación binacional con cobertura en todo el pais.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.webp",
         width: 1200,
         height: 630,
-        alt: "CR Project S.A.S — Maquinaria Pesada y Repuestos",
+        alt: "CR Project S.A.S — Maquinaria Pesada y Repuestos originales en Colombia",
       },
     ],
   },
@@ -67,8 +66,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CR Project S.A.S — Repuestos y Maquinaria Pesada",
     description:
-      "Partes genuinas, servicio técnico especializado e importación de maquinaria usada. Cobertura nacional.",
-    images: ["/og-image.jpg"],
+      "Partes genuinas, servicio técnico especializado e importación de equipos pesados usados y nuevos. Cobertura nacional.",
+    images: ["/og-image.webp"],
   },
   robots: {
     index: true,
@@ -104,12 +103,12 @@ export default function RootLayout({
               "@type": ["AutoRepair", "AutoPartsStore"],
               name: "CR Project S.A.S",
               description:
-                "Comercializadora de partes para maquinaria amarilla, camiones y motores diésel. Servicio técnico especializado.",
+                "Comercializadora de repuestos para maquinaria amarilla Colombia, camiones y motores diésel. Servicio técnico especializado.",
               url: "https://www.crprojectsas.com",
               telephone: "+573133799992",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Carrocerías Capri, El Cerrito",
+                streetAddress: "El Cerrito",
                 addressLocality: "Mosquera",
                 addressRegion: "Cundinamarca",
                 addressCountry: "CO",
@@ -137,8 +136,8 @@ export default function RootLayout({
                   "Friday",
                   "Saturday",
                 ],
-                opens: "07:00",
-                closes: "18:00",
+                opens: "08:00",
+                closes: "17:00",
               },
               priceRange: "$$",
             }),

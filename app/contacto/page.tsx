@@ -10,6 +10,7 @@ import {
   MessageCircle,
   Instagram,
   Facebook,
+  Mail, // Importado para el correo electrónico
 } from "lucide-react";
 
 export default function ContactoPage() {
@@ -19,8 +20,10 @@ export default function ContactoPage() {
     telefono: "",
     servicio: "",
     mensaje: "",
+    aceptaPolitica: false,
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [showModal, setShowModal] = useState(false); // Estado para controlar el Pop-up
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -217,6 +220,38 @@ export default function ContactoPage() {
                       placeholder="Describa su necesidad: qué equipo tiene, qué repuesto busca, qué falla presenta..."
                     />
                   </div>
+
+                  {/* Caja de Políticas con botón para Pop-up */}
+                  <div className="flex items-start gap-3 py-2">
+                    <input
+                      type="checkbox"
+                      id="politica"
+                      required
+                      checked={formData.aceptaPolitica}
+                      onChange={(e) =>
+                        setFormData({
+                          ...formData,
+                          aceptaPolitica: e.target.checked,
+                        })
+                      }
+                      className="mt-1 w-4 h-4 text-brand-yellow border-gray-300 rounded focus:ring-brand-yellow/70 transition-colors cursor-pointer"
+                    />
+                    <label
+                      htmlFor="politica"
+                      className="text-sm text-gray-600 cursor-pointer select-none"
+                    >
+                      He leído y acepto la{" "}
+                      <button
+                        type="button"
+                        onClick={() => setShowModal(true)}
+                        className="text-gray-900 font-semibold hover:text-brand-yellow transition-colors underline decoration-brand-yellow/30 inline align-baseline"
+                      >
+                        política de tratamiento de datos personales
+                      </button>
+                      .*
+                    </label>
+                  </div>
+
                   <button
                     type="submit"
                     className="inline-flex items-center gap-2 bg-brand-yellow hover:bg-brand-amber text-carbon font-bold px-8 py-4 rounded-sm transition-all hover:shadow-lg hover:shadow-brand-yellow/20"
@@ -250,6 +285,21 @@ export default function ContactoPage() {
                       </p>
                     </div>
                   </a>
+
+                  {/* Sección del Correo Electrónico Añadida */}
+                  <a
+                    href="mailto:crprojectsas@gmail.com"
+                    className="flex items-center gap-3 text-gray-600 hover:text-gray-900 transition-colors"
+                  >
+                    <Mail className="w-5 h-5 text-brand-yellow flex-shrink-0" />
+                    <div>
+                      <p className="font-medium text-gray-900">
+                        Correo Electrónico
+                      </p>
+                      <p className="text-sm">crprojectsas@gmail.com</p>
+                    </div>
+                  </a>
+
                   <div className="flex items-start gap-3 text-gray-600">
                     <MapPin className="w-5 h-5 text-brand-yellow flex-shrink-0 mt-0.5" />
                     <div>
@@ -257,8 +307,7 @@ export default function ContactoPage() {
                         Sede Principal
                       </p>
                       <p className="text-sm">
-                        Carrocerías Capri, El Cerrito, Mosquera, Cundinamarca,
-                        Colombia
+                        El Cerrito, Mosquera, Cundinamarca, Colombia
                       </p>
                     </div>
                   </div>
@@ -267,7 +316,9 @@ export default function ContactoPage() {
                     <div>
                       <p className="font-medium text-gray-900">Horario</p>
                       <p className="text-sm">
-                        Lunes a Sábado: 7:00 AM — 6:00 PM
+                        Lunes a Viernes: 8:00 AM — 5:00 PM
+                        <br />
+                        Sábado: 8:00 AM — 12:00 PM
                       </p>
                     </div>
                   </div>
@@ -337,7 +388,7 @@ export default function ContactoPage() {
             {[
               {
                 q: "¿En qué horario atienden?",
-                a: "Nuestro horario de atención es de lunes a sábado, de 7:00 AM a 6:00 PM. Para urgencias fuera de horario, puede escribirnos por WhatsApp y responderemos lo antes posible.",
+                a: "Nuestro horario de atención es de lunes a viernes, de 8:00 AM a 5:00 PM y sábados de 8:00 AM a 12:00 PM. Para urgencias fuera de horario, puede escribirnos por WhatsApp y responderemos lo antes posible.",
               },
               {
                 q: "¿Atienden en toda Colombia?",
@@ -375,6 +426,134 @@ export default function ContactoPage() {
         </div>
       </section>
 
+      {/* Pop-up Modal con el texto personalizado */}
+      {showModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
+          <div className="bg-white rounded-sm max-w-2xl w-full max-h-[80vh] flex flex-col border border-gray-200 shadow-2xl">
+            {/* Encabezado */}
+            <div className="p-6 border-b border-gray-100 flex items-center justify-between">
+              <h3 className="font-heading text-xl text-gray-900 font-bold">
+                Política de Tratamiento de Datos Personales
+              </h3>
+              <button
+                type="button"
+                onClick={() => setShowModal(false)}
+                className="text-gray-400 hover:text-gray-600 text-2xl font-semibold leading-none"
+              >
+                ×
+              </button>
+            </div>
+
+            {/* Contenido Legal Deslizable */}
+            <div className="p-6 overflow-y-auto text-sm text-gray-600 space-y-4 leading-relaxed">
+              <div>
+                <h4 className="font-bold text-gray-900 mb-1">
+                  Responsable del tratamiento
+                </h4>
+                <p>
+                  <strong>CR PROJECT S.A.S.</strong>, identificada con{" "}
+                  <strong>NIT 901.148.775-4</strong>, con domicilio en Mosquera,
+                  Cundinamarca, Colombia, es responsable del tratamiento de los
+                  datos personales suministrados por los usuarios a través de
+                  este sitio web.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="font-bold text-gray-900 mb-1">
+                  Datos recolectados
+                </h4>
+                <p>Podemos recopilar información como:</p>
+                <ul className="list-disc pl-5 mt-1 space-y-0.5">
+                  <li>Nombre y apellido</li>
+                  <li>Número telefónico</li>
+                  <li>Correo electrónico</li>
+                  <li>Empresa</li>
+                  <li>
+                    Información relacionada con solicitudes de cotización o
+                    servicio técnico
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-bold text-gray-900 mb-1">Finalidad</h4>
+                <p>
+                  Los datos personales serán utilizados exclusivamente para:
+                </p>
+                <ul className="list-disc pl-5 mt-1 space-y-0.5">
+                  <li>Atender solicitudes de información</li>
+                  <li>Elaborar cotizaciones</li>
+                  <li>Gestionar servicios técnicos</li>
+                  <li>
+                    Contactar al usuario respecto de productos y servicios
+                    solicitados
+                  </li>
+                  <li>Cumplir obligaciones legales y comerciales</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-bold text-gray-900 mb-1">Autorización</h4>
+                <p>
+                  El usuario autoriza de manera libre, previa, expresa e
+                  informada a CR PROJECT S.A.S. para el tratamiento de sus datos
+                  personales al diligenciar formularios o comunicarse mediante
+                  WhatsApp, correo electrónico o cualquier otro canal de
+                  contacto.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="font-bold text-gray-900 mb-1">
+                  Derechos del titular
+                </h4>
+                <p>De conformidad con la Ley 1581 de 2012, el titular podrá:</p>
+                <ul className="list-disc pl-5 mt-1 space-y-0.5">
+                  <li>Conocer sus datos personales</li>
+                  <li>Actualizarlos</li>
+                  <li>Rectificarlos</li>
+                  <li>Solicitar su eliminación cuando sea procedente</li>
+                  <li>Revocar la autorización otorgada</li>
+                  <li>Solicitar prueba de la autorización</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-bold text-gray-900 mb-1">
+                  Contacto para ejercer derechos
+                </h4>
+                <p>
+                  <strong>Correo:</strong> crprojectsas@gmail.com
+                  <br />
+                  <strong>Teléfono:</strong> +57 313 3799992
+                </p>
+              </div>
+
+              <div className="pt-2 border-t border-gray-100 text-xs text-gray-400">
+                <p>
+                  <strong>Vigencia:</strong> La presente política podrá ser
+                  actualizada en cualquier momento para dar cumplimiento a
+                  cambios normativos o internos.
+                </p>
+              </div>
+            </div>
+
+            {/* Pie del Pop-up */}
+            <div className="p-4 border-t border-gray-100 flex justify-end bg-gray-50">
+              <button
+                type="button"
+                onClick={() => setShowModal(false)}
+                className="bg-carbon hover:bg-gray-800 text-bone font-bold px-5 py-2 text-sm rounded-sm transition-colors"
+              >
+                Entendido / Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Esquemas JSON-LD intactos */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -410,7 +589,7 @@ export default function ContactoPage() {
                 name: "¿En qué horario atienden?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Lunes a sábado, de 7:00 AM a 6:00 PM.",
+                  text: "Lunes a Viernes, de 8:00 AM a 5:00 PM. Sábados de 8:00 AM a 12:00 PM. Para urgencias fuera de horario, puede escribirnos por WhatsApp y responderemos lo antes posible.",
                 },
               },
               {
