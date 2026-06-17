@@ -48,8 +48,8 @@ export function Footer() {
               </div>
             </div>
             <p className="text-bone/60 text-sm leading-relaxed mb-6">
-              Comercializadora de partes para maquinaria amarilla, camiones y
-              motores diésel. Servicio técnico especializado con cobertura
+              Comercializadora de repuestos maquinaria pesada Colombia,
+              vehículos pesados y motores diésel. Servicio técnico con cobertura
               nacional.
             </p>
             <div className="flex items-center gap-4">
