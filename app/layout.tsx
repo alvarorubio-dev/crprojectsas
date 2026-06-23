@@ -21,11 +21,14 @@ const archivo = Archivo_Black({
 
 export const metadata: Metadata = {
   title: {
-    default: "Repuestos y Servicio Técnico para Maquinaria Pesada | Colombia",
-    template: "%s — Servicio Técnico Maquinaria Pesada | CR Project S.A.S",
+    // 56 caracteres: Limpio, directo y con las palabras clave exactas.
+    default: "Repuestos y Maquinaria Pesada en Colombia | CR Project",
+    // Template corto: Deja espacio para que el nombre de la página no desborde los 70 caracteres.
+    template: "%s | CR Project S.A.S",
   },
+  // 153 caracteres: La opción ganadora que definimos, perfecta para Bing y Google.
   description:
-    "Comercializadora de repuestos maquinaria pesada y aftermarket para equipos pesados, camiones y motores diésel. Servicio técnico especializado, importación de maquinaria usada desde EE.UU. Cobertura nacional.",
+    "Encuentra repuestos para maquinaria pesada, camiones y motores diésel. Importación desde EE.UU. y servicio técnico especializado con cobertura nacional.",
   creator: "CR Project S.A.S",
   keywords: [
     "repuestos maquinaria amarilla",
@@ -49,10 +52,9 @@ export const metadata: Metadata = {
     locale: "es_CO",
     url: "https://www.crprojectsas.com",
     siteName: "CR Project S.A.S",
-    title:
-      "Repuestos y Servicio Técnico para Maquinaria Pesada — CR Project S.A.S",
+    title: "Repuestos y Servicio Técnico para Maquinaria Pesada — CR Project",
     description:
-      "Repuestos originales para maquinaria pesada en Colombia, servicio técnico especializado e importación de maquinaria usada desde EE.UU. Operación binacional con cobertura en todo el pais.",
+      "Encuentra repuestos para maquinaria pesada, camiones y motores diésel. Importación desde EE.UU. y servicio técnico especializado con cobertura nacional.",
     images: [
       {
         url: "/og-image.webp",
