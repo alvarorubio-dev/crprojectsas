@@ -2,8 +2,10 @@ import { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/sections/service-page-template";
 
 export const metadata: Metadata = {
-  title: "Reparación de Motores Diésel — Maquinaria Amarilla y Vehículos Pesados",
-  description: "Diagnóstico y reparación completa de motores diésel para maquinaria amarilla y vehículos pesados. Servicio especializado según especificaciones del fabricante. Cobertura nacional.",
+  title:
+    "Reparación de Motores Diésel en Mosquera y Bogotá — Maquinaria pesada",
+  description:
+    "Diagnóstico, reparación y Overhaul completa de motores diésel para maquinaria amarilla y vehículos pesados. Servicio especializado en Cundinamarca, Colombia.",
   alternates: { canonical: "https://www.crprojectsas.com/reparacion-motores" },
 };
 
@@ -12,8 +14,8 @@ export default function ReparacionMotoresPage() {
     <ServicePageTemplate
       title="Reparación de Motores Diésel"
       subtitle="Servicio especializado"
-      description="Diagnóstico y reparación completa de motores diésel para maquinaria amarilla y vehículos pesados. Trabajamos según especificaciones del fabricante con herramientas profesionales y partes genuinas o aftermarket de calidad."
-      heroImage="https://images.pexels.com/photos/3822843/pexels-photo-3822843.jpeg?auto=compress&cs=tinysrgb&w=1920"
+      description="Diagnóstico y reparación completa de motores diésel para maquinaria amarilla y vehículos pesados. Trabajamos según las especificaciones del fabricante, utilizando herramientas profesionales y partes genuinas o aftermarket de alta calidad. Ofrecemos servicio técnico especializado en Mosquera, Bogotá, Tunja y toda la región de Cundinamarca, con cobertura en toda Colombia."
+      heroImage="/banner-nos.jpg"
       features={[
         "Diagnóstico computarizado del motor",
         "Reparación parcial o overhaul completo",
@@ -41,10 +43,26 @@ export default function ReparacionMotoresPage() {
       ]}
       brands={["CAT", "CUMMINS", "JOHN DEERE", "DETROIT", "PERKINS"]}
       faqs={[
-        { question: "¿Qué marcas de motores diésel reparan?", answer: "Trabajamos con motores CAT, Cummins, John Deere, Detroit, Perkins y otras marcas presentes en maquinaria amarilla y vehículos pesados." },
-        { question: "¿Hacen overhaul completo?", answer: "Sí. Realizamos desde reparaciones menores hasta overhaul completo del motor, incluyendo rectificación, cambio de anillos, camisas, bielas y cigüeñal según sea necesario." },
-        { question: "¿Pueden reparar el motor en campo?", answer: "Dependiendo de la reparación, sí. Diagnósticos y reparaciones menores se realizan en campo. Para overhaul completo se recomienda traer el motor o la máquina a nuestro taller." },
-        { question: "¿Cuánto tiempo toma una reparación de motor?", answer: "Depende del alcance. Una reparación menor puede tomar 2-3 días, mientras que un overhaul completo puede tomar 1-3 semanas según disponibilidad de partes." },
+        {
+          question: "¿Qué marcas de motores diésel reparan?",
+          answer:
+            "Trabajamos con motores CAT, Cummins, John Deere, Detroit, Perkins y otras marcas presentes en maquinaria amarilla y vehículos pesados.",
+        },
+        {
+          question: "¿Hacen overhaul completo?",
+          answer:
+            "Sí. Realizamos desde reparaciones menores hasta overhaul completo del motor, incluyendo rectificación, cambio de anillos, camisas, bielas y cigüeñal según sea necesario.",
+        },
+        {
+          question: "¿Pueden reparar el motor en campo?",
+          answer:
+            "Dependiendo de la reparación, sí. Diagnósticos y reparaciones menores se realizan en campo. Para overhaul completo se recomienda traer el motor o la máquina a nuestro taller.",
+        },
+        {
+          question: "¿Cuánto tiempo toma una reparación de motor?",
+          answer:
+            "Depende del alcance. Una reparación menor puede tomar 2-3 días, mientras que un overhaul completo puede tomar 1-3 semanas según disponibilidad de partes.",
+        },
       ]}
       breadcrumbName="Reparación de Motores"
       breadcrumbUrl="/reparacion-motores"
