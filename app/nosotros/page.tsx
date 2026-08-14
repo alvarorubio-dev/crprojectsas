@@ -422,7 +422,16 @@ export default function NosotrosPage() {
           </div>
 
           {/* ESTADÍSTICAS */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+          <p className="text-gray-700 leading-relaxed max-w-3xl mx-auto text-center mt-16">
+            Desde su fundación en <strong>2014</strong>, CR Project ha
+            reparado <strong>más de 500 máquinas</strong> para clientes en
+            Colombia, acumulando <strong>más de 10 años</strong> de
+            experiencia en maquinaria pesada. Operamos en{" "}
+            <strong>2 países</strong> —Colombia y Estados Unidos— con soporte
+            técnico disponible <strong>24/7</strong> para atender emergencias
+            en campo.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-6">
             <div className="text-center p-6 bg-white rounded-sm border border-gray-200">
               <p className="font-heading text-3xl text-brand-yellow">10+</p>
               <p className="text-sm text-gray-600 mt-1">Años de Experiencia</p>
