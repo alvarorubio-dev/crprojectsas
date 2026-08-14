@@ -199,6 +199,19 @@ export default function NosotrosPage() {
                     </strong>
                   </p>
                 </div>
+                <p className="text-sm text-gray-500 mt-4">
+                  Liderado por <strong>Cristian Guzmán</strong>, Socio Gerente
+                  de CR Project S.A.S.{" "}
+                  <a
+                    href="https://www.linkedin.com/in/cristian-guzm%C3%A1n-2abb1015b/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-brand-yellow transition-colors"
+                  >
+                    Ver perfil en LinkedIn
+                  </a>
+                  .
+                </p>
               </div>
             </div>
             <div className="relative">
@@ -548,8 +561,12 @@ export default function NosotrosPage() {
             sameAs: [
               "https://www.instagram.com/crprojectsas",
               "https://www.facebook.com/share/1Dj61LMP2r/",
+              "https://www.linkedin.com/in/cristian-guzm%C3%A1n-2abb1015b/",
             ],
             dateModified: "2026-08-14",
+            employee: {
+              "@id": "https://www.crprojectsas.com/#cristian-guzman",
+            },
           }),
         }}
       />

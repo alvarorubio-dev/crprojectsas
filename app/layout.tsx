@@ -127,6 +127,7 @@ export default function RootLayout({
               sameAs: [
                 "https://www.instagram.com/crprojectsas",
                 "https://www.facebook.com/share/1Dj61LMP2r/",
+                "https://www.linkedin.com/in/cristian-guzm%C3%A1n-2abb1015b/",
               ],
               openingHoursSpecification: {
                 "@type": "OpeningHoursSpecification",
@@ -143,6 +144,27 @@ export default function RootLayout({
               },
               priceRange: "$$",
               dateModified: "2026-08-14",
+              employee: {
+                "@id": "https://www.crprojectsas.com/#cristian-guzman",
+              },
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@id": "https://www.crprojectsas.com/#cristian-guzman",
+              "@type": "Person",
+              name: "Cristian Guzmán",
+              jobTitle: "Socio Gerente",
+              worksFor: {
+                "@id": "https://www.crprojectsas.com/#organization",
+              },
+              sameAs: [
+                "https://www.linkedin.com/in/cristian-guzm%C3%A1n-2abb1015b/",
+              ],
             }),
           }}
         />
