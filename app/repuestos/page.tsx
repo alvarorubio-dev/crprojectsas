@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/sections/service-page-template
 
 export const metadata: Metadata = {
   title:
-    "Repuestos para Maquinaria Amarilla y Motores Diésel — Genuinos y Aftermarket",
+    "Repuestos para Maquinaria Amarilla y Motores Diésel en Colombia — Genuinos y Aftermarket",
   description:
-    "Venta de repuestos genuinos OEM y aftermarket para maquinaria amarilla, camiones y motores diésel. Turbos Garrett y BorgWarner, inyectores, módulos. Disponibilidad inmediata.",
+    "Venta de repuestos genuinos OEM y aftermarket para maquinaria amarilla y motores diésel en Colombia. CAT, Komatsu, John Deere, turbos Garrett y BorgWarner. Envío a Bogotá y todo el país.",
   alternates: { canonical: "https://www.crprojectsas.com/repuestos" },
 };
 
@@ -14,10 +14,10 @@ export default function RepuestosPage() {
     <ServicePageTemplate
       title="Repuestos para Maquinaria Amarilla y Motores Diésel"
       subtitle="Partes genuinas y aftermarket"
-      description="Pregunta lo que buscas. Comercializamos partes genuinas OEM y aftermarket para toda la línea de maquinaria amarilla, camiones y motores diésel. Turbos, inyectores, filtros, módulos y más. Disponibilidad inmediata en referencias críticas."
+      description="Pregunta lo que buscas. Comercializamos partes genuinas OEM y aftermarket para toda la línea de maquinaria amarilla, camiones y motores diésel en Colombia: CAT, Komatsu, John Deere y Cummins. Turbos, inyectores, filtros, módulos y más, con envío a Bogotá y a nivel nacional."
       heroImage="/repuestos-cr.webp"
       features={[
-        "Partes genuinas OEM de fábrica",
+        "Repuestos genuinos OEM para CAT, Komatsu, John Deere y Cummins",
         "Alternativas aftermarket de alta calidad",
         "Turbos Garrett y BorgWarner originales",
         "Inyectores diésel y kits de reparación",
@@ -64,7 +64,7 @@ export default function RepuestosPage() {
         {
           question: "¿Envían a toda Colombia?",
           answer:
-            "Sí. Realizamos envíos a nivel nacional. Las piezas más solicitadas están disponibles para despacho inmediato desde nuestra sede en Mosquera, Cundinamarca.",
+            "Sí. Realizamos envíos a nivel nacional, incluyendo Bogotá, Medellín, Cali y Barranquilla. Las piezas más solicitadas están disponibles para despacho inmediato desde nuestra sede en Mosquera, Cundinamarca.",
         },
         {
           question: "¿Para qué marcas tienen repuestos?",

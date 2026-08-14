@@ -21,7 +21,7 @@ import {
 
 export const metadata: Metadata = {
   title:
-    "Servicios de Maquinaria Pesada | Repuestos, Reparación y Mantenimiento | C.R. Project S.A.S.",
+    "Servicios de Maquinaria Pesada | Repuestos, Reparación y Mantenimiento",
   description:
     "Servicios especializados para maquinaria pesada en Colombia: venta de repuestos OEM y aftermarket CAT, CNH, John Deere; reparación de motores diésel, diagnóstico con escáner, mantenimiento preventivo y alquiler de maquinaria amarilla. Cobertura nacional.",
   keywords:

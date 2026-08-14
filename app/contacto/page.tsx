@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ContactoClient from "./ContactoClient";
 
 export const metadata: Metadata = {
-  title: "Contacto | Repuestos para Maquinaria Pesada - C.R. Project S.A.S.",
+  title: "Contacto | Repuestos para Maquinaria Pesada",
   description:
     "Comuníquese con C.R. Project S.A.S. en Mosquera. Cotice repuestos para maquinaria pesada, motores diésel y solicite servicio técnico con cobertura nacional.",
   keywords:

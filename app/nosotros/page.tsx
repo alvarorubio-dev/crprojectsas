@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title:
-    "Nosotros — Especialistas en Maquinaria Pesada Colombia | Importación USA | CR Project SAS",
+    "Nosotros — Especialistas en Maquinaria Pesada Colombia | Importación USA",
   description:
     "Líderes en repuestos, servicio técnico e importación de maquinaria pesada en Colombia. Operación binacional USA-Colombia. +10 años de experiencia. Cobertura nacional.",
   keywords:
