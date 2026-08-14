@@ -2,8 +2,10 @@ import { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/sections/service-page-template";
 
 export const metadata: Metadata = {
-  title: "Reparación de Maquinaria Pesada — Servicio Técnico Especializado",
-  description: "Servicio técnico especializado para maquinaria pesada y vehículos pesados. Diagnóstico según especificaciones del fabricante. Reparaciones en campo. Cobertura en toda Colombia.",
+  title:
+    "Reparación de Maquinaria Pesada — Servicio Técnico y Taller en Colombia",
+  description:
+    "Taller y servicio técnico especializado para maquinaria pesada y vehículos pesados en Colombia. Diagnóstico según especificaciones del fabricante. Reparaciones en taller o en campo, cobertura nacional.",
   alternates: { canonical: "https://www.crprojectsas.com/servicio-tecnico" },
 };
 
@@ -12,7 +14,7 @@ export default function ServicioTecnicoPage() {
     <ServicePageTemplate
       title="Reparación de Maquinaria Pesada"
       subtitle="Diagnóstico y reparación"
-      description="Evaluación técnica según especificaciones del fabricante. No trabajamos 'a ojo' — realizamos diagnósticos formales para identificar la falla con precisión. Cobertura a nivel nacional con reparaciones profesionales en campo."
+      description="Evaluación técnica según especificaciones del fabricante. No trabajamos 'a ojo' — realizamos diagnósticos formales para identificar la falla con precisión. Atendemos en nuestro taller de Mosquera, Cundinamarca o en campo, con cobertura a nivel nacional."
       heroImage="https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=1920"
       features={[
         "Diagnóstico según especificaciones del fabricante",
@@ -39,7 +41,7 @@ export default function ServicioTecnicoPage() {
       ]}
       brands={["CAT", "JOHN DEERE", "NEW HOLLAND", "CNH", "CASE", "NEXIQ"]}
       faqs={[
-        { question: "¿En qué zonas ofrecen servicio técnico?", answer: "Ofrecemos cobertura en toda Colombia. Nuestra sede está en Mosquera, Cundinamarca, pero atendemos solicitudes a nivel nacional con reparaciones profesionales en campo." },
+        { question: "¿En qué zonas ofrecen servicio técnico?", answer: "Ofrecemos cobertura en toda Colombia, incluyendo Bogotá, Medellín y Cali. Nuestro taller está en Mosquera, Cundinamarca, pero atendemos solicitudes a nivel nacional con reparaciones profesionales en campo." },
         { question: "¿Qué marcas de maquinaria atienden?", answer: "Trabajamos con CAT, John Deere, New Holland, CNH, Case, Komatsu y otras marcas de maquinaria amarilla y vehículos pesados diésel." },
         { question: "¿Pueden hacer diagnóstico en campo?", answer: "Sí. Contamos con herramientas portátiles de diagnóstico profesional (Nexiq, CAT COM ADAPTER 3) que nos permiten realizar evaluaciones técnicas directamente donde está la máquina." },
         { question: "¿Cuánto tarda un diagnóstico?", answer: "Un diagnóstico estándar toma entre 2-4 horas dependiendo de la complejidad de la falla. Le entregamos un informe técnico con hallazgos y cotización de reparación." },

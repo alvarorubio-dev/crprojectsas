@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/sections/service-page-template";
 
 export const metadata: Metadata = {
-  title: "Venta de Maquinaria Pesada Nueva y Usada — Importación Directa desde EE.UU.",
-  description: "Comercialización de maquinaria pesada nueva y usada importada directamente desde EE.UU. CAT, John Deere, New Holland. Equipos verificados con historial de mantenimiento.",
+  title: "Venta de Maquinaria Pesada Nueva y Usada en Colombia — Importación Directa desde EE.UU.",
+  description: "Comercialización de maquinaria pesada nueva y usada importada directamente desde EE.UU. a Colombia. CAT, John Deere, New Holland, Case, Komatsu. Equipos verificados con historial de mantenimiento.",
   alternates: { canonical: "https://www.crprojectsas.com/venta-maquinaria" },
 };
 
