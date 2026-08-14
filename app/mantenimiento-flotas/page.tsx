@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/sections/service-page-template";
 
 export const metadata: Metadata = {
-  title: "Mantenimiento Preventivo y Correctivo para Flotas",
-  description: "Planes de mantenimiento preventivo y correctivo para flotas de transporte de carga y pasajeros. Contratos recurrentes, reducción de paradas y cumplimiento normativo.",
+  title: "Mantenimiento Preventivo y Correctivo para Flotas en Colombia",
+  description: "Planes de mantenimiento preventivo y correctivo para flotas de transporte de carga y pasajeros en Colombia. Contratos recurrentes, reducción de paradas y cumplimiento normativo.",
   alternates: { canonical: "https://www.crprojectsas.com/mantenimiento-flotas" },
 };
 

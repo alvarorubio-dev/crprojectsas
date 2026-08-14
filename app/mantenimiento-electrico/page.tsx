@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/sections/service-page-template
 
 export const metadata: Metadata = {
   title:
-    "Mantenimiento Eléctrico para Maquinaria Pesada — Alternadores y Arranque",
+    "Mantenimiento Eléctrico para Maquinaria Pesada en Colombia — Alternadores y Arranque",
   description:
-    "Soluciones completas para sistemas eléctricos de maquinaria pesada. Reparación de alternadores, motores de arranque, revisión de cableado y diagnóstico eléctrico profesional.",
+    "Soluciones completas para sistemas eléctricos de maquinaria pesada en Bogotá y Colombia. Reparación de alternadores, motores de arranque, revisión de cableado y diagnóstico eléctrico profesional.",
   alternates: {
     canonical: "https://www.crprojectsas.com/mantenimiento-electrico",
   },

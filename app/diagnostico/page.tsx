@@ -2,9 +2,10 @@ import { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/sections/service-page-template";
 
 export const metadata: Metadata = {
-  title: "Escáner y Diagnóstico Diésel — Electrónica, Harness y Módulos REMAN",
+  title:
+    "Escáner y Diagnóstico Diésel en Colombia — Electrónica, Harness y Módulos REMAN",
   description:
-    "Diagnóstico computarizado con escáner profesional, reconstrucción de arneses eléctricos y módulos REMAN programados para maquinaria pesada. Capacidad técnica avanzada.",
+    "Diagnóstico computarizado con escáner profesional, reconstrucción de arneses eléctricos y módulos REMAN programados para maquinaria pesada en Colombia. Capacidad técnica avanzada.",
   alternates: { canonical: "https://www.crprojectsas.com/diagnostico" },
 };
 

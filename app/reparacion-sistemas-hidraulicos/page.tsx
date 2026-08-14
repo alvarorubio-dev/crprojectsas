@@ -2,8 +2,10 @@ import { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/sections/service-page-template";
 
 export const metadata: Metadata = {
-  title: "Reparación de Sistemas Hidráulicos — Maquinaria Pesada",
-  description: "Reparación y mantenimiento de sistemas hidráulicos para retroexcavadoras, excavadoras, cargadores y toda la línea de maquinaria amarilla. Servicio especializado con cobertura nacional.",
+  title:
+    "Reparación de Sistemas Hidráulicos, Bombas y Cilindros — Bogotá y Colombia",
+  description:
+    "Reparación y mantenimiento de sistemas hidráulicos, bombas y cilindros hidráulicos para retroexcavadoras, excavadoras, cargadores y toda la línea de maquinaria amarilla, en Bogotá y toda Colombia.",
   alternates: { canonical: "https://www.crprojectsas.com/reparacion-sistemas-hidraulicos" },
 };
 

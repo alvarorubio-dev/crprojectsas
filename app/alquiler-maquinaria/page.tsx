@@ -2,9 +2,10 @@ import { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/sections/service-page-template";
 
 export const metadata: Metadata = {
-  title: "Alquiler de Maquinaria y Equipos Pesados — Flota Certificada",
+  title:
+    "Alquiler de Maquinaria y Equipos Pesados en Colombia — Flota Certificada",
   description:
-    "Alquiler de maquinaria pesada y equipos certificados para proyectos de construcción, minería y obra civil. Flota disponible con opciones flexibles. Cobertura nacional.",
+    "Alquiler de maquinaria pesada y equipos certificados en Colombia para proyectos de construcción, minería y obra civil. Por hora, día, semana o mes, con cobertura nacional desde Bogotá.",
   alternates: { canonical: "https://www.crprojectsas.com/alquiler-maquinaria" },
 };
 
@@ -59,6 +60,11 @@ export default function AlquilerMaquinariaPage() {
           question: "¿Atienden proyectos fuera de Cundinamarca?",
           answer:
             "Sí. Realizamos logística de transporte para proyectos a nivel nacional. El costo de transporte se cotiza según la distancia y el equipo requerido.",
+        },
+        {
+          question: "¿Cuánto cuesta el alquiler de maquinaria pesada?",
+          answer:
+            "El precio depende del tipo de equipo, el plazo de alquiler y si incluye operador. Escríbanos por WhatsApp con el equipo y el proyecto que tiene en mente y le enviamos una cotización sin compromiso.",
         },
       ]}
       breadcrumbName="Alquiler de Maquinaria"
