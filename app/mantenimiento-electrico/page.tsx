@@ -17,7 +17,7 @@ export default function MantenimientoElectricoPage() {
       title="Mantenimiento Eléctrico para Maquinaria Pesada"
       subtitle="Sistemas eléctricos completos"
       description="Soluciones completas para sistemas eléctricos de maquinaria amarilla y vehículos pesados. Desde la reparación de alternadores y motores de arranque hasta la revisión de cableado y diagnóstico eléctrico profesional con equipos de última generación."
-      heroImage="electrico.webp"
+      heroImage="/electrico.webp"
       features={[
         "Diagnóstico eléctrico computarizado completo",
         "Reparación y reconstrucción de alternadores",

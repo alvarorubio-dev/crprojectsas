@@ -13,7 +13,7 @@ export default function VentaMaquinariaPage() {
       title="Venta de Maquinaria Pesada"
       subtitle="Importación directa desde EE.UU."
       description="Comercializamos maquinaria pesada nueva y usada importada directamente desde subastas y dealers en Estados Unidos. Equipos verificados con historial de mantenimiento, listos para operar en Colombia. Sin intermediarios, mejor precio."
-      heroImage="https://images.pexels.com/photos/1078884/pexels-photo-1078884.jpeg?auto=compress&cs=tinysrgb&w=1920"
+      heroImage="/impor-maqui.jpg"
       features={[
         "Importación directa desde subastas y dealers en EE.UU.",
         "Equipos con historial de mantenimiento verificado",

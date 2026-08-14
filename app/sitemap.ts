@@ -48,6 +48,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
       changeFrequency: "monthly" as const,
     },
+    {
+      path: "/mantenimiento-electrico",
+      priority: 0.7,
+      changeFrequency: "monthly" as const,
+    },
     { path: "/nosotros", priority: 0.6, changeFrequency: "monthly" as const },
     { path: "/contacto", priority: 0.6, changeFrequency: "monthly" as const },
   ];

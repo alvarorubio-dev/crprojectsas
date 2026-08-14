@@ -15,7 +15,7 @@ export default function SistemasHidraulicosPage() {
       title="Reparación de Sistemas Hidráulicos"
       subtitle="Mantenimiento especializado"
       description="Reparación y mantenimiento profesional de sistemas hidráulicos para toda la línea de maquinaria amarilla. Diagnóstico de fugas, pérdida de presión, cilindros, bombas, válvulas y mangueras. Servicio en taller o en campo."
-      heroImage="https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg?auto=compress&cs=tinysrgb&w=1920"
+      heroImage="/hidraulico.jpg"
       features={[
         "Diagnóstico de presión y caudal del sistema hidráulico",
         "Reparación y reconstrucción de cilindros hidráulicos",

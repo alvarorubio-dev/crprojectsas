@@ -15,7 +15,7 @@ export default function ServicioTecnicoPage() {
       title="Reparación de Maquinaria Pesada"
       subtitle="Diagnóstico y reparación"
       description="Evaluación técnica según especificaciones del fabricante. No trabajamos 'a ojo' — realizamos diagnósticos formales para identificar la falla con precisión. Atendemos en nuestro taller de Mosquera, Cundinamarca o en campo, con cobertura a nivel nacional."
-      heroImage="https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=1920"
+      heroImage="/repair-maquina.jpg"
       features={[
         "Diagnóstico según especificaciones del fabricante",
         "Herramientas profesionales: Nexiq, CAT COM ADAPTER 3",

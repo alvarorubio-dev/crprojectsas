@@ -13,7 +13,7 @@ export default function MantenimientoFlotasPage() {
       title="Mantenimiento Preventivo y Correctivo para Flotas"
       subtitle="Contratos a medida"
       description="Planes de mantenimiento diseñados para flotas de transporte de carga y pasajeros. Reducimos tiempos muertos, garantizamos cumplimiento normativo y mantenemos su flota productiva con contratos recurrentes y atención prioritaria."
-      heroImage="https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg?auto=compress&cs=tinysrgb&w=1920"
+      heroImage="/mantenimiento-correctivo.jpg"
       features={[
         "Planes de mantenimiento preventivo programado",
         "Mantenimiento correctivo con tiempos de respuesta garantizados",
