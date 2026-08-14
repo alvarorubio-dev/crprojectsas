@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, ArrowRight, CheckCircle2 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -55,9 +56,13 @@ export function ServicePageTemplate({
     <div className="pt-20">
       <section className="relative py-20 lg:py-28 overflow-hidden">
         <div className="absolute inset-0 industrial-gradient" />
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-10"
-          style={{ backgroundImage: `url('${heroImage}')` }}
+        <Image
+          src={heroImage}
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-10"
         />
 
         <div className="absolute inset-0 bg-gradient-to-b from-carbon/10 to-carbon/10" />
