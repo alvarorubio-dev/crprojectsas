@@ -1,5 +1,10 @@
 import { MetadataRoute } from "next";
 
+// Fecha real del último cambio de contenido del sitio. Actualizar manualmente
+// cada vez que se publique contenido nuevo — no usar new Date() (falsea el
+// lastmod en cada build sin que el contenido haya cambiado).
+const LAST_CONTENT_UPDATE = new Date("2026-08-14");
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.crprojectsas.com";
 
@@ -50,8 +55,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map((route) => ({
     // Evita doble barra si el path ya la tiene
     url: route.path === "/" ? baseUrl : `${baseUrl}${route.path}`,
-    // Lo ideal es una fecha fija o real, pero si dejas el New Date(), Next.js lo manejará.
-    lastModified: new Date(),
+    lastModified: LAST_CONTENT_UPDATE,
     changeFrequency: route.changeFrequency,
     priority: route.priority,
   }));

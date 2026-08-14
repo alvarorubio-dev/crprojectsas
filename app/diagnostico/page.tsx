@@ -40,6 +40,38 @@ export default function DiagnosticoPage() {
         "Soporte post-instalación para verificar funcionamiento correcto.",
       ]}
       brands={["CAT", "JOHN DEERE", "NEXIQ", "CUMMINS", "CNH"]}
+      comparisonTable={{
+        heading: "Módulo REMAN vs. Módulo Nuevo Original — Diferencias",
+        columnALabel: "Módulo REMAN",
+        columnBLabel: "Módulo nuevo original",
+        rows: [
+          {
+            aspecto: "Qué es",
+            columnA:
+              "Módulo reconstruido profesionalmente, probado y programado para funcionar como nuevo.",
+            columnB:
+              "Módulo de fábrica sin uso previo, adquirido directamente al fabricante o distribuidor autorizado.",
+          },
+          {
+            aspecto: "Costo",
+            columnA: "A fracción del costo de un módulo nuevo.",
+            columnB:
+              "Costo elevado — la razón más común por la que los clientes buscan una alternativa.",
+          },
+          {
+            aspecto: "Disponibilidad",
+            columnA:
+              "Stock de los módulos más solicitados; si no está en stock, CR Project gestiona la importación.",
+            columnB: "Sujeta a pedido e importación del fabricante.",
+          },
+          {
+            aspecto: "Programación y soporte",
+            columnA:
+              "Programación y configuración específica para su máquina y aplicación, con soporte post-instalación de CR Project.",
+            columnB: "Programación a cargo del proveedor que lo suministre.",
+          },
+        ],
+      }}
       faqs={[
         {
           question: "¿Qué es un módulo REMAN?",

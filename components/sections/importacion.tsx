@@ -21,11 +21,24 @@ export function ImportacionSection() {
           >
             ¿Cómo importar maquinaria pesada a Colombia?
           </h2>
-          <p className="text-gray-600 mt-4 max-w-3xl mx-auto leading-relaxed">
-            Nosotros lo hacemos fácil. Gracias a nuestra operación binacional
-            (Colombia – Miami, EE.UU.), gestionamos subastas, logística y
-            nacionalización aduanera para traer tus equipos desde el exterior
-            sin complicaciones.
+          <p className="text-gray-600 mt-4 max-w-3xl mx-auto leading-relaxed text-left sm:text-center">
+            Importar maquinaria pesada a Colombia implica cuatro etapas:
+            primero, seleccionamos el equipo en subastas estadounidenses como
+            Ritchie Bros, IronPlanet y Copart, o lo compramos directamente a
+            dealers autorizados de CAT, Komatsu, John Deere y Volvo. Segundo,
+            nuestro equipo en Miami, Florida inspecciona el equipo —
+            horómetro, historial de mantenimiento y estado estructural —
+            antes de confirmar la compra. Tercero, gestionamos el transporte
+            marítimo hasta puerto colombiano y la nacionalización aduanera
+            ante la DIAN, incluyendo aranceles, documentación de importación
+            y registro nacional del equipo. Cuarto, entregamos la maquinaria
+            lista para operar en la sede del cliente o en nuestras
+            instalaciones en Mosquera, Cundinamarca. Todo el proceso, desde
+            la compra en subasta hasta la entrega en Colombia, toma
+            aproximadamente 45 a 60 días según la logística marítima y los
+            tiempos de nacionalización. CR Project asume la gestión completa:
+            usted no necesita viajar ni tramitar nada directamente en
+            Estados Unidos.
           </p>
         </div>
 

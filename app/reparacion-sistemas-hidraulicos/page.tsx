@@ -40,6 +40,39 @@ export default function SistemasHidraulicosPage() {
         "Pruebas post-reparación para garantizar el correcto funcionamiento.",
       ]}
       brands={["CAT", "JOHN DEERE", "NEW HOLLAND", "CASE", "KOMATSU"]}
+      comparisonTable={{
+        heading: "Servicio en Campo vs. en Taller — Qué Incluye y Cuánto Tarda",
+        columnALabel: "En campo",
+        columnBLabel: "En taller",
+        rows: [
+          {
+            aspecto: "Qué incluye",
+            columnA:
+              "Diagnóstico de presión y caudal, cambio de mangueras y acoples, reparación de fugas.",
+            columnB:
+              "Reconstrucción de cilindros y bombas hidráulicas, mantenimiento de válvulas de control.",
+          },
+          {
+            aspecto: "Cuándo se recomienda",
+            columnA:
+              "Fallas identificadas que no requieren desmontar el componente — mangueras, acoples, fugas puntuales.",
+            columnB:
+              "Reconstrucción de bombas o cilindros, que requiere banco de trabajo especializado.",
+          },
+          {
+            aspecto: "Tiempo estimado",
+            columnA: "Horas — mismo día en la mayoría de los casos",
+            columnB: "3-5 días, según disponibilidad de sellos y partes",
+          },
+          {
+            aspecto: "Dónde se realiza",
+            columnA:
+              "En la ubicación de la máquina: obra, mina o sede del cliente.",
+            columnB:
+              "En el taller de CR Project, con pruebas post-reparación de presión y caudal.",
+          },
+        ],
+      }}
       faqs={[
         { question: "¿Qué equipos atienden?", answer: "Retroexcavadoras, excavadoras, cargadores, motoniveladoras, vibrocompactadores, mini cargadores y toda la línea de maquinaria amarilla que use sistema hidráulico." },
         { question: "¿Pueden reparar el sistema hidráulico en campo?", answer: "Sí. Diagnósticos, cambio de mangueras, reparación de fugas y muchas intervenciones se pueden realizar en campo. Para reconstrucciones de bombas o cilindros, se recomienda llevar el componente al taller." },

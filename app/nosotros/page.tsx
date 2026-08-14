@@ -149,9 +149,9 @@ export default function NosotrosPage() {
               </h2>
               <div className="mt-6 space-y-5 text-gray-700 leading-relaxed">
                 <p>
-                  <strong>CR Project S.A.S</strong> nació para resolver un
-                  problema real: las empresas colombianas necesitaban un
-                  proveedor confiable con{" "}
+                  <strong>CR Project S.A.S</strong> nació en{" "}
+                  <strong>2014</strong> para resolver un problema real: las
+                  empresas colombianas necesitaban un proveedor confiable con{" "}
                   <strong>
                     acceso directo a repuestos genuinos desde Estados Unidos
                   </strong>{" "}
@@ -546,9 +546,10 @@ export default function NosotrosPage() {
               ],
             },
             sameAs: [
-              "https://www.facebook.com/crprojectsas",
               "https://www.instagram.com/crprojectsas",
+              "https://www.facebook.com/share/1Dj61LMP2r/",
             ],
+            dateModified: "2026-08-14",
           }),
         }}
       />

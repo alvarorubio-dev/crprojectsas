@@ -7,6 +7,19 @@ interface FAQ {
   answer: string;
 }
 
+interface ComparisonRow {
+  aspecto: string;
+  columnA: string;
+  columnB: string;
+}
+
+interface ComparisonTable {
+  heading: string;
+  columnALabel: string;
+  columnBLabel: string;
+  rows: ComparisonRow[];
+}
+
 interface ServicePageProps {
   title: string;
   subtitle: string;
@@ -16,6 +29,7 @@ interface ServicePageProps {
   problems: string[];
   whyUs: string[];
   brands?: string[];
+  comparisonTable?: ComparisonTable;
   faqs: FAQ[];
   breadcrumbName: string;
   breadcrumbUrl: string;
@@ -31,6 +45,7 @@ export function ServicePageTemplate({
   problems,
   whyUs,
   brands,
+  comparisonTable,
   faqs,
   breadcrumbName,
   breadcrumbUrl,
@@ -119,6 +134,63 @@ export function ServicePageTemplate({
           </div>
         </div>
       </section>
+
+      {comparisonTable && (
+        <section className="py-16 lg:py-20 bg-white">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="font-heading text-2xl sm:text-3xl text-gray-900 text-center mb-10">
+              {comparisonTable.heading}
+            </h2>
+            <div className="overflow-x-auto border border-gray-200 rounded-sm">
+              <table className="w-full text-left border-collapse">
+                <thead>
+                  <tr className="bg-gray-50 border-b border-gray-200">
+                    <th
+                      scope="col"
+                      className="p-4 text-sm font-bold text-gray-900 uppercase tracking-wide"
+                    >
+                      Aspecto
+                    </th>
+                    <th
+                      scope="col"
+                      className="p-4 text-sm font-bold text-gray-900 uppercase tracking-wide"
+                    >
+                      {comparisonTable.columnALabel}
+                    </th>
+                    <th
+                      scope="col"
+                      className="p-4 text-sm font-bold text-gray-900 uppercase tracking-wide"
+                    >
+                      {comparisonTable.columnBLabel}
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {comparisonTable.rows.map((row, i) => (
+                    <tr
+                      key={i}
+                      className="border-b border-gray-100 last:border-0"
+                    >
+                      <th
+                        scope="row"
+                        className="p-4 text-sm font-semibold text-gray-900 align-top whitespace-nowrap"
+                      >
+                        {row.aspecto}
+                      </th>
+                      <td className="p-4 text-sm text-gray-700 align-top">
+                        {row.columnA}
+                      </td>
+                      <td className="p-4 text-sm text-gray-700 align-top">
+                        {row.columnB}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="py-16 lg:py-20 bg-carbon">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -250,6 +322,7 @@ export function ServicePageTemplate({
               url: "https://www.crprojectsas.com",
             },
             areaServed: { "@type": "Country", name: "Colombia" },
+            dateModified: "2026-08-14",
           }),
         }}
       />

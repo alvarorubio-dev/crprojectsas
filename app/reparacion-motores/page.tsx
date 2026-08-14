@@ -42,6 +42,44 @@ export default function ReparacionMotoresPage() {
         "Garantía sobre mano de obra y repuestos instalados.",
       ]}
       brands={["CAT", "CUMMINS", "JOHN DEERE", "DETROIT", "PERKINS"]}
+      comparisonTable={{
+        heading: "Overhaul Parcial vs. Completo — Diferencias y Tiempos",
+        columnALabel: "Reparación parcial",
+        columnBLabel: "Overhaul completo",
+        rows: [
+          {
+            aspecto: "Qué incluye",
+            columnA:
+              "Intervención puntual: cambio de empaques, sellos, inyectores u otro componente específico ya diagnosticado.",
+            columnB:
+              "Rectificación de block y culata, cambio de anillos, camisas, bielas y cigüeñal, calibración de inyectores.",
+          },
+          {
+            aspecto: "Cuándo se recomienda",
+            columnA:
+              "Fallas puntuales: fuga menor, ruido localizado o pérdida leve de potencia con causa identificada.",
+            columnB:
+              "Motor con múltiples fallas, alto número de horas de uso o pérdida de compresión generalizada.",
+          },
+          {
+            aspecto: "Tiempo estimado",
+            columnA: "2-3 días",
+            columnB: "1-3 semanas, según disponibilidad de partes",
+          },
+          {
+            aspecto: "Dónde se realiza",
+            columnA: "En taller o en campo, según la falla",
+            columnB:
+              "En taller, con banco de pruebas para inyectores y bombas",
+          },
+          {
+            aspecto: "Garantía",
+            columnA: "Sobre mano de obra y repuestos instalados",
+            columnB:
+              "Garantía escrita de 6 meses, con protocolo de rodaje documentado",
+          },
+        ],
+      }}
       faqs={[
         {
           question: "¿Qué marcas de motores diésel reparan?",

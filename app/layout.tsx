@@ -142,6 +142,7 @@ export default function RootLayout({
                 closes: "17:00",
               },
               priceRange: "$$",
+              dateModified: "2026-08-14",
             }),
           }}
         />
